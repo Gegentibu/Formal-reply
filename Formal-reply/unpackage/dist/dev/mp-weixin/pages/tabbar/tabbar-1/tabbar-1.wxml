@@ -1,1 +1,1 @@
-<view class="content">页面 - 1 -</view>
+<view class="Hybody"><view class="header HyFlexB"><view class="headerImg HyFlexAb"><image src="../../../static/logo.png" mode></image><text>上官喜儿</text></view><view class="PositionImg HyFlexM"><image src="../../../static/logo.png" mode></image><text>上海</text></view></view><view class="titleF">答复CBD中心导航</view><view class="formlNav"><block wx:for="{{NavOptions}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="Nav"></view></block></view></view>
