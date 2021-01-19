@@ -158,15 +158,59 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
     return {
-      NavOptions: [{}, {}, {}, {}, {}, {}] };
+      NavOptions: [{}, {}, {}, {}, {}, {}],
+      target: 0,
+      // 当前item位置
+      thisindex: 0 };
 
   },
-  onLoad: function onLoad() {},
-  methods: {} };exports.default = _default;
+  methods: {
+    // 切换触发的事件
+    toggle: function toggle(e) {
+      var index = e.detail.current;
+      this.target = index;
+    },
+    // 点击nav控制下面的展示
+    setIndex: function setIndex(e) {
+      var index = e.currentTarget.dataset.index;
+      this.thisindex = index;
+    } } };exports.default = _default;
 
 /***/ }),
 /* 17 */

@@ -13,10 +13,42 @@
 		<view class="titleF">
 			答复CBD中心导航
 		</view>
-		<view class="formlNav">
+		<view class="formlNav HyFlexB">
 			<view v-for="(item,index) in NavOptions" :key="index" class="Nav">
-				
+				<view class="NavImage">
+					<view style="width: 100%;color: #F5AB36;text-indent:20upx;">●</view>
+					<image src="../../../static/img/release.png" mode=""></image>
+					<view style="width: 100%;text-align: center;font-size: 14px;line-height: 14px;">达人</view>
+				</view>
 			</view>
+		</view>
+		<view class="Cof">
+			用户圈
+		</view>
+		<view class="content">
+			<view class="nuter">
+				<view :class="target==0?'active':''" @click="setIndex" data-index="0">
+				 		111
+				 </view>
+				<view :class="target==1?'active':''" @click="setIndex" data-index="1">
+						222
+				 </view>
+			</view>
+			<swiper 
+			:duration="500" 
+			:current="thisindex"  
+			:data-index='thisindex' 
+			@change="toggle"
+			circular>
+				<swiper-item>
+					<!-- 按顺序对应第一个的内容 -->
+					1111111
+				</swiper-item>
+				<swiper-item>
+					<!-- 按顺序对应第二个的内容 -->
+					2222222
+				</swiper-item>
+			</swiper>
 		</view>
 	</view>
 </template>
@@ -25,15 +57,67 @@
 export default {
 	data() {
 		return {
-			NavOptions:[{},{},{},{},{},{}]
-		};
-	},
-	onLoad() {},
-	methods: {}
+			NavOptions:[{},{},{},{},{},{}],
+			target:0,
+				// 当前item位置
+				thisindex:0,
+			}
+		},
+		methods: {
+			// 切换触发的事件
+		toggle(e){
+				let index = e.detail.current
+				this.target = index
+			},
+		// 点击nav控制下面的展示
+		setIndex(e){
+			let index = e.currentTarget.dataset.index
+			this.thisindex = index
+			},
+		}
 };
 </script>
 
 <style>
+	.nuter{
+		width: 100%;
+		height: 80rpx;
+		line-height: 80rpx;
+		display: flex;
+		justify-content: space-around;
+		font-size: 35rpx;
+	}
+	.nuter view{
+		flex: 1;
+		font-size: 30rpx;
+		text-align: center;
+		transition: all 0.5s ease .1s;
+		background-color: #f0f0f0;
+	}
+	.active{
+		box-sizing: border-box;
+		color: #007AFF;
+		border-bottom: 5rpx solid #00aaff;
+		background-color: #f3ffff;
+		border-radius: 10rpx;
+		box-shadow: 3px 3px 5px #888888;
+	}
+	swiper-item{
+		width: 100%;
+		overflow: hidden;
+		text-align: center;
+		line-height: 300rpx;
+		/* background-color: red; */
+	}
+	.swiper-item{
+		overflow-y: scroll;
+		width: 99.5%;
+		height: 99%;
+		/* background-color: white; */
+		/* height: 99%; */
+		box-sizing: border-box;
+		padding: 1rpx;
+	}
 .Hybody {
 	padding: 32upx;
 	margin-top: 26upx;
@@ -76,6 +160,42 @@ export default {
 .titleF{
 	font-size: 18px;
 	font-family: '方正工业黑-标准';
-	margin: 46upx 0;
+	margin-top: 46upx;
+	margin-bottom: 6upx;
+	font-weight: 600;
+}
+.formlNav{
+	flex-wrap: wrap;
+}
+.Nav{
+	margin-top: 40upx;
+}
+.NavImage{
+	width: 208upx;
+	height: 278upx;
+	border-radius: 16px;
+	background-color: #23273D;
+	display: flex;
+	flex-wrap: wrap ;
+	align-items: center;
+	justify-content: center;
+}
+.NavImage image{
+	/* margin: 62upx 50upx; */
+	width: 108upx;
+	height: 154upx;
+}
+.Cof{
+	width: 100%;
+	height: 194upx;
+	font-size: 18px;
+	font-family: '方正工业黑-标准';
+	margin-top: 46upx;
+	margin-bottom: 46upx;
+	text-align: center;
+	line-height: 242upx;
+	font-weight: 600;
+	background-image: url(../../../static/img/cof.png);
+	background-repeat: 100%;
 }
 </style>
