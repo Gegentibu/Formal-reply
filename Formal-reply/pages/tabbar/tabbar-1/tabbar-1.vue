@@ -28,10 +28,10 @@
 		<view class="content">
 			<view class="nuter">
 				<view :class="target==0?'active':''" @click="setIndex" data-index="0">
-				 		111
+				 		热门活动
 				 </view>
 				<view :class="target==1?'active':''" @click="setIndex" data-index="1">
-						222
+						推荐活动
 				 </view>
 			</view>
 			<swiper 
@@ -84,23 +84,30 @@ export default {
 		height: 80rpx;
 		line-height: 80rpx;
 		display: flex;
-		justify-content: space-around;
-		font-size: 35rpx;
+		justify-content: flex-start;
 	}
 	.nuter view{
-		flex: 1;
-		font-size: 30rpx;
+		/* flex: 1; */
+		/* font-size: 30rpx; */
 		text-align: center;
 		transition: all 0.5s ease .1s;
-		background-color: #f0f0f0;
+		/* background-color: #f0f0f0; */
+		text-align: left;
+		margin-right: 20upx;
+/* 		font-size: 18px;
+		font-family: '方正工业黑-标准';
+		font-weight: 600; */
 	}
 	.active{
 		box-sizing: border-box;
-		color: #007AFF;
-		border-bottom: 5rpx solid #00aaff;
+		/* color: #007AFF; */
+/* 		border-bottom: 5rpx solid #00aaff;
 		background-color: #f3ffff;
 		border-radius: 10rpx;
-		box-shadow: 3px 3px 5px #888888;
+		box-shadow: 3px 3px 5px #888888; */
+		font-size: 18px;
+		font-family: '方正工业黑-标准';
+		font-weight: 600;
 	}
 	swiper-item{
 		width: 100%;
