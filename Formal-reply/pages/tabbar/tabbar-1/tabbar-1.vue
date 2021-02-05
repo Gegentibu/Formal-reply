@@ -39,41 +39,94 @@
 			:current="thisindex"  
 			:data-index='thisindex' 
 			@change="toggle"
+			:style="swiperHeight"
 			circular>
 				<swiper-item>
 					<!-- 按顺序对应第一个的内容 -->
-					1111111
+					<rectangle :dataList="dataList"></rectangle>
 				</swiper-item>
 				<swiper-item>
 					<!-- 按顺序对应第二个的内容 -->
-					2222222
+					<rectangle :dataList="dataList"></rectangle>
 				</swiper-item>
 			</swiper>
 		</view>
+		<view class="content">
+			<view class="nuter">
+				<view :class="target2==0?'active':''" @click="setIndex2" data-index="0">
+				 		热门达人
+				 </view>
+				<view :class="target2==1?'active':''" @click="setIndex2" data-index="1">
+						推荐达人
+				 </view>
+			</view>
+			<swiper 
+			:duration="500" 
+			:current="thisindex2"  
+			:data-index='thisindex2' 
+			@change="toggle2"
+			:style="swiperHeight2"
+			circular>
+				<swiper-item>
+					<!-- 按顺序对应第一个的内容 -->
+					<expert :dataList="dataList"></expert>
+				</swiper-item>
+				<swiper-item>
+					<!-- 按顺序对应第二个的内容 -->
+					<expert :dataList="dataList"></expert>
+				</swiper-item>
+			</swiper>
+		</view>		
 	</view>
 </template>
 
 <script>
+	import rectangle from '../../../component/rectangle.vue'
+	import expert from '../../../component/expert.vue'
 export default {
+	components:{
+			rectangle,
+			expert
+	},
 	data() {
 		return {
 			NavOptions:[{},{},{},{},{},{}],
 			target:0,
-				// 当前item位置
-				thisindex:0,
+			// 当前item位置
+			thisindex:0,
+			swiperHeight:0,
+			target2:0,
+			// 当前item位置
+			thisindex2:0,
+			swiperHeight2:0,
+			dataList:[{},{},{}]
 			}
 		},
 		methods: {
 			// 切换触发的事件
-		toggle(e){
-				let index = e.detail.current
-				this.target = index
-			},
-		// 点击nav控制下面的展示
-		setIndex(e){
+			toggle(e){
+					let index = e.detail.current
+					this.target = index
+				},			
+			// 切换触发的事件
+			toggle2(e){
+					let index = e.detail.current
+					this.target2 = index
+				},
+			// 点击nav控制下面的展示
+			setIndex(e){
 			let index = e.currentTarget.dataset.index
 			this.thisindex = index
 			},
+			// 点击nav控制下面的展示
+			setIndex2(e){
+			let index = e.currentTarget.dataset.index
+			this.thisindex2 = index
+			},			
+		},
+		onLoad() {
+			this.swiperHeight ='height:'+this.dataList.length*169+'px'
+			this.swiperHeight2 ='height:'+this.dataList.length*169+'px'
 		}
 };
 </script>
@@ -109,11 +162,14 @@ export default {
 		font-family: '方正工业黑-标准';
 		font-weight: 600;
 	}
+/* 	swiper{
+		height: 100%;
+	} */
 	swiper-item{
 		width: 100%;
-		overflow: hidden;
+		/* overflow: hidden; */
 		text-align: center;
-		line-height: 300rpx;
+		/* line-height: 300rpx; */
 		/* background-color: red; */
 	}
 	.swiper-item{

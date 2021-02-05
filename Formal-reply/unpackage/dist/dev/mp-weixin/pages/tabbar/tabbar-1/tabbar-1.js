@@ -135,69 +135,108 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var rectangle = function rectangle() {__webpack_require__.e(/*! require.ensure | component/rectangle */ "component/rectangle").then((function () {return resolve(__webpack_require__(/*! ../../../component/rectangle.vue */ 75));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var expert = function expert() {__webpack_require__.e(/*! require.ensure | component/expert */ "component/expert").then((function () {return resolve(__webpack_require__(/*! ../../../component/expert.vue */ 82));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    rectangle: rectangle,
+    expert: expert },
+
   data: function data() {
     return {
       NavOptions: [{}, {}, {}, {}, {}, {}],
       target: 0,
       // 当前item位置
-      thisindex: 0 };
+      thisindex: 0,
+      swiperHeight: 0,
+      target2: 0,
+      // 当前item位置
+      thisindex2: 0,
+      swiperHeight2: 0,
+      dataList: [{}, {}, {}] };
 
   },
   methods: {
@@ -206,11 +245,26 @@ var _default =
       var index = e.detail.current;
       this.target = index;
     },
+    // 切换触发的事件
+    toggle2: function toggle2(e) {
+      var index = e.detail.current;
+      this.target2 = index;
+    },
     // 点击nav控制下面的展示
     setIndex: function setIndex(e) {
       var index = e.currentTarget.dataset.index;
       this.thisindex = index;
-    } } };exports.default = _default;
+    },
+    // 点击nav控制下面的展示
+    setIndex2: function setIndex2(e) {
+      var index = e.currentTarget.dataset.index;
+      this.thisindex2 = index;
+    } },
+
+  onLoad: function onLoad() {
+    this.swiperHeight = 'height:' + this.dataList.length * 169 + 'px';
+    this.swiperHeight2 = 'height:' + this.dataList.length * 169 + 'px';
+  } };exports.default = _default;
 
 /***/ }),
 /* 17 */
