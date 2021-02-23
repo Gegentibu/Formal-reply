@@ -2,6 +2,7 @@
   "navigationBarTitleText": "uni-app",
   "usingComponents": {
     "rectangle": "/component/rectangle",
-    "expert": "/component/expert"
+    "expert": "/component/expert",
+    "service": "/component/service"
   }
 }

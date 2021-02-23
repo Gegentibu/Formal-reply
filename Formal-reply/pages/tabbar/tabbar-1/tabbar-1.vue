@@ -77,28 +77,57 @@
 				</swiper-item>
 			</swiper>
 		</view>		
+		<view class="content">
+			<view class="nuter">
+				<view :class="target3==0?'active':''" @click="setIndex3" data-index="0">
+				 		热门服务
+				 </view>
+				<view :class="target3==1?'active':''" @click="setIndex3" data-index="1">
+						推荐服务
+				 </view>
+			</view>
+			<swiper 
+			:duration="500" 
+			:current="thisindex3"  
+			:data-index='thisindex3' 
+			@change="toggle3"
+			:style="swiperHeight3"
+			circular>
+				<swiper-item>
+					<!-- 按顺序对应第一个的内容 -->
+					<service :dataList="dataList"></service>
+				</swiper-item>
+				<swiper-item>
+					<!-- 按顺序对应第二个的内容 -->
+					<service :dataList="dataList"></service>
+				</swiper-item>
+			</swiper>
+		</view>			
 	</view>
 </template>
 
 <script>
 	import rectangle from '../../../component/rectangle.vue'
 	import expert from '../../../component/expert.vue'
+	import service from '../../../component/service.vue'
 export default {
 	components:{
 			rectangle,
-			expert
+			expert,
+			service
 	},
 	data() {
 		return {
 			NavOptions:[{},{},{},{},{},{}],
 			target:0,
-			// 当前item位置
 			thisindex:0,
 			swiperHeight:0,
 			target2:0,
-			// 当前item位置
 			thisindex2:0,
 			swiperHeight2:0,
+			target3:0,
+			thisindex3:0,
+			swiperHeight3:0,
 			dataList:[{},{},{}]
 			}
 		},
@@ -114,6 +143,11 @@ export default {
 					this.target2 = index
 				},
 			// 点击nav控制下面的展示
+			toggle3(e){
+					let index = e.detail.current
+					this.target3 = index
+				},
+			// 点击nav控制下面的展示
 			setIndex(e){
 			let index = e.currentTarget.dataset.index
 			this.thisindex = index
@@ -122,11 +156,17 @@ export default {
 			setIndex2(e){
 			let index = e.currentTarget.dataset.index
 			this.thisindex2 = index
-			},			
+			},		
+			// 点击nav控制下面的展示
+			setIndex3(e){
+			let index = e.currentTarget.dataset.index
+			this.thisindex3 = index
+			},					
 		},
 		onLoad() {
 			this.swiperHeight ='height:'+this.dataList.length*169+'px'
-			this.swiperHeight2 ='height:'+this.dataList.length*169+'px'
+			this.swiperHeight2 ='height:'+this.dataList.length*730+'px'
+			this.swiperHeight3 ='height:'+this.dataList.length*530+'px'
 		}
 };
 </script>

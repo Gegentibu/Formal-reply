@@ -1,18 +1,18 @@
 <template>
-	<view class="expert">
-		<view class="expertBox" v-for="(item,index) in dataList" :key="index">
-			<view class="expertBoxBj">
+	<view class="service">
+		<view class="serviceBox" v-for="(item,index) in dataList" :key="index">
+			<view class="serviceBoxBj">
 				
 			</view>
-			<view class="expertBoxCt">
-				<view class="expertBoxCtTl">与达人交朋友拓展新的人脉</view>
-				<view class="expertBoxCtFbx">
-					<view class="expertBoxCtFbxTl">
+			<view class="serviceBoxCt">
+				<view class="serviceBoxCtTl">与达人交朋友拓展新的人脉</view>
+				<view class="serviceBoxCtFbx">
+					<view class="serviceBoxCtFbxTl">
 						个人名片卡
 					</view>
 					<view class="HyFlexB">
 						<image class="drImg" src="../static/img/tabbar/home.png" mode=""></image>
-						<text class="expertBoxCtFbxTl">达人</text>
+						<text class="serviceBoxCtFbxTl">达人</text>
 					</view>
 				</view>
 				<view class="intro HyFlexB">
@@ -61,24 +61,24 @@
 </script>
 
 <style>
-	.expertBox{
+	.serviceBox{
 		margin-bottom: 40upx;
 	}
-.expertBoxBj{
+.serviceBoxBj{
 	width: 100%;
 	height: 710upx;
 	background-image: url(../static/tu.jpg);
 	border-top-right-radius: 20upx;
 	border-top-left-radius: 20upx;
 }
-.expertBoxCt{
+.serviceBoxCt{
 	width: 100%;
 	min-height: 710upx;
 	border-bottom-right-radius: 20upx;
 	border-bottom-left-radius: 20upx;
 	background-color: #07EE14;
 }
-.expertBoxCtTl{
+.serviceBoxCtTl{
 	width: 94%;
 	font-size: 26px;
 	height: 100upx;
@@ -90,7 +90,7 @@
 	padding: 0 3%;
 	background-color: rgba(8, 9, 4, 0.5);
 }
-.expertBoxCtFbx{
+.serviceBoxCtFbx{
 	width: 94%;
 	height: 100upx;
 	line-height: 100upx;
@@ -103,7 +103,7 @@
 	top: -100upx;
 	background-color: rgba(8, 9, 4, 0.5);
 }
-.expertBoxCtFbxTl{
+.serviceBoxCtFbxTl{
 	font-size: 24px;
 	font-weight: 600;
 }
