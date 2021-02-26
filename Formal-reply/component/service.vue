@@ -5,36 +5,34 @@
 				
 			</view>
 			<view class="serviceBoxCt">
-				<view class="serviceBoxCtTl">与达人交朋友拓展新的人脉</view>
-				<view class="serviceBoxCtFbx">
-					<view class="serviceBoxCtFbxTl">
-						个人名片卡
+				<view class="serviceBoxCtTl">内蒙古锡林郭勒草原羊全羊礼盒</view>
+				<view class="introBox">
+					<view class="introText">
+						<image src="../static/img/tabbar/guanzhu.png" mode=""></image>
+						<text>2020/10/02 （显示产品发布时间）</text>
 					</view>
-					<view class="HyFlexB">
-						<image class="drImg" src="../static/img/tabbar/home.png" mode=""></image>
-						<text class="serviceBoxCtFbxTl">达人</text>
+					<view class="introText">
+						<image src="../static/img/tabbar/guanzhu.png" mode=""></image>
+						<text>杨树浦路 6.5KM外</text>
 					</view>
-				</view>
-				<view class="intro HyFlexB">
-					<view class="introLeft">
-						<text class="introLeftText">个人简迅：女   37岁</text>
-						<text class="introLeftText">达人职业：教育行业  英语老师</text>
-						<text class="introLeftText">所在地区：内蒙古.呼和浩特</text>
-						<text class="introLeftText">达人职务：创始人兼CEO</text>
-						<text class="introLeftText">单位信息：内蒙古餐企云网络科技有限公司</text>
-					</view>
-					<view class="introRight">
-						<image class="anImg" src="../static/img/tabbar/home.png" mode=""></image>
-						<text>91</text>
-						<image class="anImg" src="../static/img/tabbar/home.png" mode=""></image>
-						<text>91</text>
-						<image class="anImg" src="../static/img/tabbar/home.png" mode=""></image>
-						<text>91</text>
-						<image class="anImg" src="../static/img/tabbar/home.png" mode=""></image>
+					<view class="introText">
+						<image src="../static/img/tabbar/guanzhu.png" mode=""></image>
+						<text>1680元/人 </text>
 					</view>
 				</view>
-				<view class="" style="padding:20upx 3% 0 3%; text-align: left;font-size: 22px;font-weight: 600;">
-					刘涛
+				<view class="introFo HyFlexL">
+					<view class="HyFlexL">
+						<image class="anImg" src="../static/img/tabbar/home.png" mode=""></image>
+						<text>91</text>
+					</view>
+					<view class="HyFlexL">
+						<image class="anImg" src="../static/img/tabbar/home.png" mode=""></image>
+						<text>91</text>
+					</view>
+					<view class="HyFlexL">
+						<image class="anImg" src="../static/img/tabbar/home.png" mode=""></image>
+						<text>91</text>
+					</view>
 				</view>
 			</view>
 		</view>
@@ -63,6 +61,8 @@
 <style>
 	.serviceBox{
 		margin-bottom: 40upx;
+		overflow: hidden;
+		height: 710upx;
 	}
 .serviceBoxBj{
 	width: 100%;
@@ -70,22 +70,23 @@
 	background-image: url(../static/tu.jpg);
 	border-top-right-radius: 20upx;
 	border-top-left-radius: 20upx;
+	border-bottom-right-radius: 20upx;
+	border-bottom-left-radius: 20upx;
 }
 .serviceBoxCt{
 	width: 100%;
-	min-height: 710upx;
+	min-height: 360upx;
 	border-bottom-right-radius: 20upx;
 	border-bottom-left-radius: 20upx;
-	background-color: #07EE14;
 }
 .serviceBoxCtTl{
 	width: 94%;
-	font-size: 26px;
+	font-size: 22px;
 	height: 100upx;
 	line-height: 100upx;
 	font-weight: 600;
 	position: relative;
-	top: -100upx;
+	top: -400upx;
 	text-align: left;
 	padding: 0 3%;
 	background-color: rgba(8, 9, 4, 0.5);
@@ -112,7 +113,17 @@
 	justify-content: space-between;
 	align-items: center;
 }
-.drImg{
+.HyFlexC{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.HyFlexL{
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+.introText image{
 	width: 48upx;
 	height: 48upx;
 	margin-right: 10upx;
@@ -120,23 +131,37 @@
 .anImg{
 	width: 48upx;
 	height: 48upx;
+	margin-right: 30upx;
 }
-.intro{
+.introBox{
 	width: 94%;
+	font-size: 16px;
+	height: 300upx;
+	line-height: 100upx;
+	font-weight: 600;
+	position: relative;
+	top: -400upx;
+	text-align: left;
+	padding: 0 3%;
+	background-color: rgba(8, 9, 4, 0.5);
+}
+.introText{
+	height: 60upx;
+	display: flex;
+	align-items: center;
+}
+.introFo{
+	width: 94%;
+	font-size: 15px;
+	height: 100upx;
+	line-height: 100upx;
+	font-weight: 600;
+	position: relative;
+	top: -500upx;
+	text-align: left;
 	padding: 0 3%;
 }
-.introLeft{
-	width: 90%;
-}
-.introRight{
-	width: 10%;
-}
-.introLeftText{
-	width: 100%;
-	display: block;
-	text-align: left;
-	font-size: 16px;
-	margin: 4upx 0;
-	font-weight: 600;
+.HyFlexL text{
+	margin-right: 20upx;
 }
 </style>

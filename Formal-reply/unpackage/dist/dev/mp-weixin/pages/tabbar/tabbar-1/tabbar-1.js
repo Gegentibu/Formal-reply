@@ -135,7 +135,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var rectangle = function rectangle() {__webpack_require__.e(/*! require.ensure | component/rectangle */ "component/rectangle").then((function () {return resolve(__webpack_require__(/*! ../../../component/rectangle.vue */ 75));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var expert = function expert() {__webpack_require__.e(/*! require.ensure | component/expert */ "component/expert").then((function () {return resolve(__webpack_require__(/*! ../../../component/expert.vue */ 82));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var service = function service() {__webpack_require__.e(/*! require.ensure | component/service */ "component/service").then((function () {return resolve(__webpack_require__(/*! ../../../component/service.vue */ 100));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var rectangle = function rectangle() {__webpack_require__.e(/*! require.ensure | component/rectangle */ "component/rectangle").then((function () {return resolve(__webpack_require__(/*! ../../../component/rectangle.vue */ 75));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var expert = function expert() {__webpack_require__.e(/*! require.ensure | component/expert */ "component/expert").then((function () {return resolve(__webpack_require__(/*! ../../../component/expert.vue */ 82));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var service = function service() {__webpack_require__.e(/*! require.ensure | component/service */ "component/service").then((function () {return resolve(__webpack_require__(/*! ../../../component/service.vue */ 89));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 
@@ -301,9 +301,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     } },
 
   onLoad: function onLoad() {
-    this.swiperHeight = 'height:' + this.dataList.length * 169 + 'px';
+    this.swiperHeight = 'height:' + this.dataList.length * 180 + 'px';
     this.swiperHeight2 = 'height:' + this.dataList.length * 730 + 'px';
-    this.swiperHeight3 = 'height:' + this.dataList.length * 530 + 'px';
+    this.swiperHeight3 = 'height:' + this.dataList.length * 370 + 'px';
   } };exports.default = _default;
 
 /***/ }),

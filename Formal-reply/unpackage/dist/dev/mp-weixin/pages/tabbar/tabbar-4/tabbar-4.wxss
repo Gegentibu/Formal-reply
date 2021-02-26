@@ -1,7 +1,9 @@
 
-.content {
-	text-align: center;
-	height: 400rpx;
-	margin-top: 200rpx;
+.Hybody {
+	padding: 0 32rpx;
+	height: 100%;
+	font-size: 12px;
+	background-color: #080808;
+	color: #fff;
 }
 

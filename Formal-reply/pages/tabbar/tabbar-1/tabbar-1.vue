@@ -164,9 +164,9 @@ export default {
 			},					
 		},
 		onLoad() {
-			this.swiperHeight ='height:'+this.dataList.length*169+'px'
+			this.swiperHeight ='height:'+this.dataList.length*180+'px'
 			this.swiperHeight2 ='height:'+this.dataList.length*730+'px'
-			this.swiperHeight3 ='height:'+this.dataList.length*530+'px'
+			this.swiperHeight3 ='height:'+this.dataList.length*370+'px'
 		}
 };
 </script>
@@ -223,7 +223,6 @@ export default {
 	}
 .Hybody {
 	padding: 32upx;
-	margin-top: 26upx;
 	font-size: 12px;
 	background-color: #080808;
 	color: #fff;

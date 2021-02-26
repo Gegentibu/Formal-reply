@@ -32,7 +32,7 @@
         "pagePath": "pages/tabbar/tabbar-2/tabbar-2",
         "iconPath": "static/img/tabbar/guanzhu.png",
         "selectedIconPath": "static/img/tabbar/guanzhuactive.png",
-        "text": "关注"
+        "text": "发现"
       },
       {
         "pagePath": "pages/tabbar/tabbar-3/tabbar-3",
@@ -50,10 +50,10 @@
         "pagePath": "pages/tabbar/tabbar-5/tabbar-5",
         "iconPath": "static/img/tabbar/me.png",
         "selectedIconPath": "static/img/tabbar/meactive.png",
-        "text": "我"
+        "text": "我的"
       }
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap62.json"
+  "sitemapLocation": "sitemap29.json"
 }

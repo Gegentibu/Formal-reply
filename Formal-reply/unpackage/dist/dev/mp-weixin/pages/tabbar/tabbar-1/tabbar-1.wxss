@@ -55,7 +55,6 @@ swiper-item{
 }
 .Hybody {
 	padding: 32rpx;
-	margin-top: 26rpx;
 	font-size: 12px;
 	background-color: #080808;
 	color: #fff;
