@@ -76,7 +76,7 @@
 	min-height: 710upx;
 	border-bottom-right-radius: 20upx;
 	border-bottom-left-radius: 20upx;
-	background-color: #07EE14;
+	background-color:#120DB5;
 }
 .expertBoxCtTl{
 	width: 94%;
