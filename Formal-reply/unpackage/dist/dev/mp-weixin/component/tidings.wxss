@@ -1,27 +1,4 @@
 
-.Hybody {
-	/* padding: 0 32upx; */
-	height: 100%;
-	font-size: 12px;
-	background-color: #080808;
-	color: #fff;
-}
-.title{
-	color: rgba(255, 255, 255, 100);
-	font-size: 22px;
-	text-align: left;
-	font-weight: 600;
-	font-family: 方正工业黑-标准;
-	margin-bottom: 10rpx;
-	padding: 20rpx 32rpx;
-}
-.content{
-	height: 1500rpx;
-	line-height: 20px;
-	border-radius: 45px 45px 0px 0px;
-	text-align: center;
-	background-color: rgb(45,46,41);
-}
 .box{
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -42,6 +19,32 @@
 	-webkit-align-items: center;
 	        align-items: center;
 }
+.boxmiddle{
+	width: 600rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	height: 121rpx;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+}
+.boxright{
+	width: 80rpx;
+	height: 121rpx;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: end;
+	-webkit-justify-content: flex-end;
+	        justify-content: flex-end;
+}
+.boxright .num{
+	display: -webkit-inline-box;
+	text-align: -webkit-center;
+	margin-top: 10rpx;
+}
 .img{
 	border-radius: 50%;
 }
@@ -51,7 +54,10 @@
 	border-radius: 50%;
 }
 .text {
+	width: 100%;
+	display: block;
 	margin-left: 10rpx;
+	text-align: left;
 }
 .num{
 	width: 44rpx;

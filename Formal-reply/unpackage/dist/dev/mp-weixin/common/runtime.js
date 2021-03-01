@@ -105,11 +105,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"component/expert":1,"component/rectangle":1,"component/service":1,"components/ren-dropdown-filter/ren-dropdown-filter":1};
+/******/ 		var cssChunks = {"component/expert":1,"component/rectangle":1,"component/service":1,"components/ren-dropdown-filter/ren-dropdown-filter":1,"component/tidings":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"component/expert":"component/expert","component/rectangle":"component/rectangle","component/service":"component/service","components/ren-dropdown-filter/ren-dropdown-filter":"components/ren-dropdown-filter/ren-dropdown-filter"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"component/expert":"component/expert","component/rectangle":"component/rectangle","component/service":"component/service","components/ren-dropdown-filter/ren-dropdown-filter":"components/ren-dropdown-filter/ren-dropdown-filter","component/tidings":"component/tidings"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {
