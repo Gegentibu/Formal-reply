@@ -1,4 +1,8 @@
 {
   "navigationBarTitleText": "uni-app",
-  "usingComponents": {}
+  "usingComponents": {
+    "rectangle": "/component/rectangle",
+    "expert": "/component/expert",
+    "service": "/component/service"
+  }
 }

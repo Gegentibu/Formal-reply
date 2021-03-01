@@ -28,10 +28,10 @@
 		<view class="content">
 			<view class="nuter">
 				<view :class="target==0?'active':''" @click="setIndex" data-index="0">
-				 		111
+				 		热门活动
 				 </view>
 				<view :class="target==1?'active':''" @click="setIndex" data-index="1">
-						222
+						推荐活动
 				 </view>
 			</view>
 			<swiper 
@@ -39,41 +39,134 @@
 			:current="thisindex"  
 			:data-index='thisindex' 
 			@change="toggle"
+			:style="swiperHeight"
 			circular>
 				<swiper-item>
 					<!-- 按顺序对应第一个的内容 -->
-					1111111
+					<rectangle :dataList="dataList"></rectangle>
 				</swiper-item>
 				<swiper-item>
 					<!-- 按顺序对应第二个的内容 -->
-					2222222
+					<rectangle :dataList="dataList"></rectangle>
 				</swiper-item>
 			</swiper>
 		</view>
+		<view class="content">
+			<view class="nuter">
+				<view :class="target2==0?'active':''" @click="setIndex2" data-index="0">
+				 		热门达人
+				 </view>
+				<view :class="target2==1?'active':''" @click="setIndex2" data-index="1">
+						推荐达人
+				 </view>
+			</view>
+			<swiper 
+			:duration="500" 
+			:current="thisindex2"  
+			:data-index='thisindex2' 
+			@change="toggle2"
+			:style="swiperHeight2"
+			circular>
+				<swiper-item>
+					<!-- 按顺序对应第一个的内容 -->
+					<expert :dataList="dataList"></expert>
+				</swiper-item>
+				<swiper-item>
+					<!-- 按顺序对应第二个的内容 -->
+					<expert :dataList="dataList"></expert>
+				</swiper-item>
+			</swiper>
+		</view>		
+		<view class="content">
+			<view class="nuter">
+				<view :class="target3==0?'active':''" @click="setIndex3" data-index="0">
+				 		热门服务
+				 </view>
+				<view :class="target3==1?'active':''" @click="setIndex3" data-index="1">
+						推荐服务
+				 </view>
+			</view>
+			<swiper 
+			:duration="500" 
+			:current="thisindex3"  
+			:data-index='thisindex3' 
+			@change="toggle3"
+			:style="swiperHeight3"
+			circular>
+				<swiper-item>
+					<!-- 按顺序对应第一个的内容 -->
+					<service :dataList="dataList"></service>
+				</swiper-item>
+				<swiper-item>
+					<!-- 按顺序对应第二个的内容 -->
+					<service :dataList="dataList"></service>
+				</swiper-item>
+			</swiper>
+		</view>			
 	</view>
 </template>
 
 <script>
+	import rectangle from '../../../component/rectangle.vue'
+	import expert from '../../../component/expert.vue'
+	import service from '../../../component/service.vue'
 export default {
+	components:{
+			rectangle,
+			expert,
+			service
+	},
 	data() {
 		return {
 			NavOptions:[{},{},{},{},{},{}],
 			target:0,
-				// 当前item位置
-				thisindex:0,
+			thisindex:0,
+			swiperHeight:0,
+			target2:0,
+			thisindex2:0,
+			swiperHeight2:0,
+			target3:0,
+			thisindex3:0,
+			swiperHeight3:0,
+			dataList:[{},{},{}]
 			}
 		},
 		methods: {
 			// 切换触发的事件
-		toggle(e){
-				let index = e.detail.current
-				this.target = index
-			},
-		// 点击nav控制下面的展示
-		setIndex(e){
+			toggle(e){
+					let index = e.detail.current
+					this.target = index
+				},			
+			// 切换触发的事件
+			toggle2(e){
+					let index = e.detail.current
+					this.target2 = index
+				},
+			// 点击nav控制下面的展示
+			toggle3(e){
+					let index = e.detail.current
+					this.target3 = index
+				},
+			// 点击nav控制下面的展示
+			setIndex(e){
 			let index = e.currentTarget.dataset.index
 			this.thisindex = index
 			},
+			// 点击nav控制下面的展示
+			setIndex2(e){
+			let index = e.currentTarget.dataset.index
+			this.thisindex2 = index
+			},		
+			// 点击nav控制下面的展示
+			setIndex3(e){
+			let index = e.currentTarget.dataset.index
+			this.thisindex3 = index
+			},					
+		},
+		onLoad() {
+			this.swiperHeight ='height:'+this.dataList.length*180+'px'
+			this.swiperHeight2 ='height:'+this.dataList.length*730+'px'
+			this.swiperHeight3 ='height:'+this.dataList.length*370+'px'
 		}
 };
 </script>
@@ -84,29 +177,39 @@ export default {
 		height: 80rpx;
 		line-height: 80rpx;
 		display: flex;
-		justify-content: space-around;
-		font-size: 35rpx;
+		justify-content: flex-start;
 	}
 	.nuter view{
-		flex: 1;
-		font-size: 30rpx;
+		/* flex: 1; */
+		/* font-size: 30rpx; */
 		text-align: center;
 		transition: all 0.5s ease .1s;
-		background-color: #f0f0f0;
+		/* background-color: #f0f0f0; */
+		text-align: left;
+		margin-right: 20upx;
+/* 		font-size: 18px;
+		font-family: '方正工业黑-标准';
+		font-weight: 600; */
 	}
 	.active{
 		box-sizing: border-box;
-		color: #007AFF;
-		border-bottom: 5rpx solid #00aaff;
+		/* color: #007AFF; */
+/* 		border-bottom: 5rpx solid #00aaff;
 		background-color: #f3ffff;
 		border-radius: 10rpx;
-		box-shadow: 3px 3px 5px #888888;
+		box-shadow: 3px 3px 5px #888888; */
+		font-size: 18px;
+		font-family: '方正工业黑-标准';
+		font-weight: 600;
 	}
+/* 	swiper{
+		height: 100%;
+	} */
 	swiper-item{
 		width: 100%;
-		overflow: hidden;
+		/* overflow: hidden; */
 		text-align: center;
-		line-height: 300rpx;
+		/* line-height: 300rpx; */
 		/* background-color: red; */
 	}
 	.swiper-item{
@@ -120,7 +223,6 @@ export default {
 	}
 .Hybody {
 	padding: 32upx;
-	margin-top: 26upx;
 	font-size: 12px;
 	background-color: #080808;
 	color: #fff;

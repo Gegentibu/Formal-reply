@@ -1,7 +1,39 @@
 
-.content {
-	text-align: center;
-	height: 400rpx;
-	margin-top: 200rpx;
+.Hybody{
+	padding: 0 32rpx;
+	height: 100%;
+	font-size: 12px;
+	background-color: #080808;
+	color: #fff;
+}
+.root{
+	background-color: #080808;
+}
+.title{
+	width: 70%;
+	margin-left: 15%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 108rpx;
+	z-index: 9999;
+	position: fixed;
+	left: 0;
+	background-color: #080808;
+}
+.titleText{
+	font-family: 方正工业黑-标准;
+	font-size: 20px;
+	font-weight: 600;
+}
+.sousuo{
+	width: 50rpx;
+	height: 50rpx;
 }
 
