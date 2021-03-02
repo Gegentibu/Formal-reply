@@ -25,7 +25,7 @@
 	margin: 20rpx 0;
 }
 .nameid{
-	margin: 5rpx 0;
+	margin: 10rpx 0;
 	font-size: 14px;
 	color: rgb(153, 155, 178);
 }
@@ -112,5 +112,76 @@
 .miaoshu image{
 	width: 24rpx;
 	height: 24rpx;
+}
+.menuBox{
+	padding-bottom: 60rpx;
+	border-bottom: 1px solid #3B3838 ;
+}
+.menuContent{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.menuTitle{
+	height: 90rpx;
+	color: #fff;
+}
+.menuTitleL{
+	width: 75%;
+	height: 90rpx;
+	line-height: 90rpx;
+	background-color: #393942;
+	text-align: center;
+	border-top-left-radius: 40px;
+}
+.menuTitleR{
+	width: 25%;
+	height: 90rpx;
+	line-height: 90rpx;
+	background-color: #EE0707;
+	text-align: center;
+	border-top-right-radius: 40px;
+}
+.menuList {
+	width: 200rpx;
+	height: 200rpx;
+	margin: 0 20rpx;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.menuList text{
+	width: 100rpx;
+	margin: 0 50rpx;
+	text-align: end;
+	position: relative;
+	top: 30rpx;
+	color: #EE0707;
+	font-size: 14px;
+	font-weight: 600;
+}
+.menuListText {
+	width: 200rpx;
+	text-align: center;
+}
+.menuList image{
+	width: 60rpx;
+	height: 60rpx;
+}
+.fontS{
+	color: rgba(255, 255, 255, 100);
+	font-size: 22px;
+	text-align: left;
+	font-weight: 600;
+	font-family: 方正工业黑-标准;
+	margin-bottom: 10rpx;
+	padding: 20rpx 32rpx;
 }
 
