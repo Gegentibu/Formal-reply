@@ -121,6 +121,36 @@
 						>
 					</view>
 				</view>
+				<view class="fontS2">
+					财务中心
+				</view>
+				<view style="padding: 0upx 32upx;">
+					<view class="tx">
+						<view class="tixian HyFlexB" v-for="(item,index) in Tixiandata" :key="index">
+							<view class="tixianL">
+								<view class="tixianLt">
+									服务收入
+								</view>
+								<view class="tixianLn">
+									￥0.00
+								</view>
+							</view>
+							<view class="tixianR">
+								提现
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="">
+				<view class="HyFlexB">
+					<view class="fontS">
+							尊享VIP会员中心
+					</view>
+					<view class="fontS">
+						>
+					</view>
+				</view>
 			</view>
 		</view>
 		
@@ -131,7 +161,8 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: 'Hello',
+				Tixiandata:[{},{},{},{},{}]
 			}
 		},
 		onLoad() {
@@ -146,7 +177,7 @@
 <style>
 	.Hybody {
 		/* padding: 0 32upx; */
-		height: 1500upx;
+		height: 2200upx;
 		font-size: 12px;
 		background-color: #080808;
 		color: #fff;
@@ -287,7 +318,40 @@
 		text-align: left;
 		font-weight: 600;
 		font-family: 方正工业黑-标准;
-		margin-bottom: 10upx;
 		padding: 20upx 32upx;
+	}
+	.fontS2{
+		font-size: 18px;
+		color: rgba(255, 255, 255, 100);
+		text-align: left;
+		font-weight: 600;
+		font-family: 方正工业黑-标准;
+		margin-bottom: 10upx;
+		padding: 10upx 32upx;
+	}
+	.tixian{
+		padding: 22upx 0;
+		font-size: 16px;
+		border-bottom: 1px solid #787B7B;
+	}
+	.tixianLt{
+		width: 100%;
+	}
+	.tixianLn{
+		width: 100%;
+	}
+	.tixianR{
+		padding: 10upx 45upx;
+		border-radius: 10upx;
+		background-color: #787B7B;
+		color: #080808;
+	}
+	.tx .tixian:nth-last-child(1){
+		border-bottom: none;
+	}
+	.tx{
+		padding: 10upx 32upx;
+		background-color: #171616;
+		border-radius: 15upx;
 	}
 </style>
