@@ -57,7 +57,7 @@
 					<image src="../../../static/img/tabbar/me.png" mode=""></image>
 				</view>
 		</view>
-		<view class="" style="padding:60upx 16upx 60upx 16upx;">
+		<view class="" style="padding:60upx 16upx 10upx 16upx;">
 			<view class="menuBox">
 				<view class="menuTitle HyFlexB">
 					<view class="menuTitleL">
@@ -113,7 +113,7 @@
 				</view>
 			</view>
 			<view class="">
-				<view class="HyFlexB">
+				<view class="HyFlexB" style="padding: 0upx 32upx;">
 					<view class="fontS">
 						我的答复CBD中心
 					</view>
@@ -142,18 +142,117 @@
 					</view>
 				</view>
 			</view>
-			<view class="">
-				<view class="HyFlexB">
-					<view class="fontS">
-							尊享VIP会员中心
+			<view class="" style="padding: 0upx 32upx;">
+				<view class="">
+					<view class="HyFlexB">
+						<view class="fontS">
+								尊享VIP会员中心
+						</view>
+						<view class="fontS">
+							>
+						</view>
 					</view>
-					<view class="fontS">
-						>
+					<view class="HyFlexM Hykp">
+						<view class="HyFlexB wdt100">
+							<view class="" style="font-size: 20px;font-weight: 400;">
+								答复.尊享VIP
+							</view>
+							<view class="" style="font-size: 16px;">
+								最低￥29.99/月
+							</view>
+						</view>
+						<view class="HyFlexB wdt100">
+							<view class="HyFlexM" style="flex-wrap: wrap;width: 65%;justify-content: start;">
+								<view class="" >
+									推荐开通<text style="color: #4CD964;">铂金</text>以上会员
+								</view>
+								<view class="" style="margin: 10upx 0;">
+									推广最高每一笔奖励<text style="color: #4CD964;">275</text>元
+								</view>
+							</view>
+							<view class="Hybtn">
+								会员中心
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="" style="padding: 0upx 32upx;">
+				<view class="">
+					<view class="HyFlexB">
+						<view class="fontS">
+								答复黑卡中心
+						</view>
+						<view class="fontS">
+							>
+						</view>
+					</view>
+					<view class="HyFlexM Hykp">
+						<view class="HyFlexB wdt100">
+							<view class="" style="font-size: 20px;font-weight: 400;">
+								答复黑卡                
+							</view>
+							<view class="Hybtn">
+								会员中心
+							</view>
+						</view>
+						<view class="HyFlexB wdt100">
+							<view class="HyFlexM" style="flex-wrap: wrap;width: 100%;justify-content: start;">
+								<view class="" >
+									是您尊贵身份的象征
+								</view>
+								<view class="" style="margin: 10upx 0;">
+									开通后超低价格购买已入住黑卡实体商家线下服务
+								</view>
+							</view>
+						</view>
 					</view>
 				</view>
 			</view>
 		</view>
-		
+		<view class="" style="padding: 10upx 32upx;">
+			<view class="fontS" style="text-align: center;">
+				为您推荐
+			</view>
+			<view class="fontS">
+				活动
+			</view>
+			<view class="HyFlexB" style="justify-content: space-around;">
+				<image class="Wdhuodong" src="../../../static/tu.jpg" mode=""></image>
+				
+				<image class="Wdhuodong" src="../../../static/tu.jpg" mode=""></image>
+			</view>
+			<view class="fontS">
+				达人
+			</view>
+			<view class="HyFlexB" style="justify-content: space-around;">
+				<view class="HyFlexB" style="width: 200upx;flex-wrap: wrap;justify-content: center;">
+					<image class="Wddaren" src="../../../static/tu.jpg" mode=""></image>
+					<text style="margin: 10upx 0;">郊野公园慢跑</text>
+				</view>
+				<view class="HyFlexB" style="width: 200upx;flex-wrap: wrap;justify-content: center;">
+					<image class="Wddaren" src="../../../static/tu.jpg" mode=""></image>
+					<text style="margin: 10upx 0;">郊野公园慢跑</text>
+				</view>
+			</view>
+			<view class="fontS">
+				服务
+			</view>
+			<view class="release">	
+				<view class="releaseBj">
+					<text class="releaseBjTitle">让好产品走出去让更多人购买</text>
+					<text class="releaseBjText">在这里您可以出售您公司或代理产品及朋友的产品来互动营销，让指尖生意源源不断的继续。</text>
+				</view>
+			</view>
+			<view class="fontS">
+				三方服务
+			</view>
+			<view class="HyFlexB">
+				<view class="HyFlexB" style="width: 200upx;flex-wrap: wrap;justify-content: center;">
+					<image class="Wdsanfang" src="../../../static/tu.jpg" mode=""></image>
+				</view>
+			</view>
+		</view>
 	</view>
 </template>
 
@@ -177,7 +276,7 @@
 <style>
 	.Hybody {
 		/* padding: 0 32upx; */
-		height: 2200upx;
+		height: 5000upx;
 		font-size: 12px;
 		background-color: #080808;
 		color: #fff;
@@ -291,7 +390,7 @@
 	.menuList {
 		width: 200upx;
 		height: 200upx;
-		margin: 0 20upx;
+		margin: 0 18upx;
 		flex-wrap: wrap;
 	}
 	.menuList text{
@@ -318,7 +417,7 @@
 		text-align: left;
 		font-weight: 600;
 		font-family: 方正工业黑-标准;
-		padding: 20upx 32upx;
+		padding: 20upx 0upx;
 	}
 	.fontS2{
 		font-size: 18px;
@@ -353,5 +452,66 @@
 		padding: 10upx 32upx;
 		background-color: #171616;
 		border-radius: 15upx;
+	}
+	.Hykp{
+		padding: 10upx;
+		border-radius: 15upx;
+		background-color: #2C2D28;
+		flex-wrap: wrap;
+	}
+	.wdt100{
+		width: 94%;
+		padding: 3%;
+	}
+	.Hybtn{
+		display: block;
+		padding:10upx 30upx;
+		border-radius: 30upx;
+		background-color: rgba(18, 13, 181, 100);
+		color: rgba(254, 255, 249, 100);
+		font-size: 14px;
+		text-align: center;
+		font-family: Microsoft Yahei;
+	}
+	.HyFlexB .Wdhuodong{
+		width: 260upx;
+		height: 260upx;
+		border-radius: 10upx;
+	}
+	.HyFlexB .Wddaren{
+		width: 104upx;
+		height: 104upx;
+		border-radius: 50%;
+	}
+	.HyFlexB .Wdsanfang{
+		width: 154upx;
+		height: 154upx;
+		border-radius: 50%;
+	}
+	.releaseTitle{
+		color: rgba(255, 255, 255, 100);
+		font-size: 22px;
+		text-align: left;
+		font-weight: 600;
+		font-family: 方正工业黑-标准;
+		margin-top: 12upx;
+		margin-bottom: 40upx;
+	}
+	.releaseBj{
+		width: 100%;
+		height: 660upx;
+		background-image: url(../../../static/tu.jpg);
+		border-radius: 20upx;
+	}
+	.releaseBjTitle{
+		padding: 60% 2% 2% 2%;
+		font-size: 20px;
+		font-weight: 600;
+		display: block;
+	}
+	.releaseBjText{
+		padding: 0 2%;
+		font-size: 18px;
+		display: block;
 	}
 </style>

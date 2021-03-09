@@ -62,8 +62,8 @@
 		justify-content: flex-end;
 	}
 	.boxright .num{
-		display: -webkit-inline-box;
-		text-align: -webkit-center;
+		display: flex;
+		justify-content: center;
 		margin-top: 10upx;
 	}
 	.img{
@@ -85,5 +85,6 @@
 		height: 44upx;
 		background-color:#F36D11;
 		border-radius: 50%;
+		    margin-left: 20rpx;
 	}
 </style>
