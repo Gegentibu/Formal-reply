@@ -59,6 +59,9 @@
 </script>
 
 <style>
+	.service{
+		width: 100%;
+	}
 	.serviceBox{
 		margin-bottom: 40upx;
 		overflow: hidden;
@@ -135,7 +138,7 @@
 }
 .introBox{
 	width: 94%;
-	font-size: 16px;
+	font-size: 14px;
 	height: 300upx;
 	line-height: 100upx;
 	font-weight: 600;

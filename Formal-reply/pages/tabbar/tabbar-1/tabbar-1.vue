@@ -43,7 +43,7 @@
 			circular>
 				<swiper-item>
 					<!-- 按顺序对应第一个的内容 -->
-					<rectangle :dataList="dataList"></rectangle>
+					<rectangle id="swiperHeight" :dataList="dataList"></rectangle>
 				</swiper-item>
 				<swiper-item>
 					<!-- 按顺序对应第二个的内容 -->
@@ -69,7 +69,7 @@
 			circular>
 				<swiper-item>
 					<!-- 按顺序对应第一个的内容 -->
-					<expert :dataList="dataList"></expert>
+					<expert id="swiperHeight2" :dataList="dataList"></expert>
 				</swiper-item>
 				<swiper-item>
 					<!-- 按顺序对应第二个的内容 -->
@@ -95,7 +95,7 @@
 			circular>
 				<swiper-item>
 					<!-- 按顺序对应第一个的内容 -->
-					<service :dataList="dataList"></service>
+					<service id="swiperHeight3" :dataList="dataList"></service>
 				</swiper-item>
 				<swiper-item>
 					<!-- 按顺序对应第二个的内容 -->
@@ -164,9 +164,23 @@ export default {
 			},					
 		},
 		onLoad() {
+			var that = this;
 			this.swiperHeight ='height:'+this.dataList.length*180+'px'
 			this.swiperHeight2 ='height:'+this.dataList.length*730+'px'
 			this.swiperHeight3 ='height:'+this.dataList.length*370+'px'
+			const query = uni.createSelectorQuery().in(this);
+			query.select('#swiperHeight').boundingClientRect(data => {
+				console.log(data.height)
+				that.swiperHeight ='height:'+data.height+'px';
+			}).exec();
+			query.select('#swiperHeight2').boundingClientRect(data => {
+				console.log(data.height)
+				that.swiperHeight2 ='height:'+data.height+'px';
+			}).exec();
+			query.select('#swiperHeight3').boundingClientRect(data => {
+				console.log(data.height)
+				that.swiperHeight3 ='height:'+data.height+'px';
+			}).exec();
 		}
 };
 </script>

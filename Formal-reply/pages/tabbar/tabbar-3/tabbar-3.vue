@@ -1,43 +1,60 @@
 <template>
-	<view  class="Hybody">
-		<view class="fabiao">
-			<image src="../../../static/fabiao.png" mode=""></image>
+	<view class="Hybody">
+		<view class="fontS">
+			答复CBD用户圈动态
 		</view>
-		<view class="release">
-			<view class="releaseTitle">
-				活动发布
-			</view>
-			<view class="releaseBj">
-				<text class="releaseBjTitle">让好产品走出去让更多人购买</text>
-				<text class="releaseBjText">在这里您可以出售您公司或代理产品及朋友的产品来互动营销，让指尖生意源源不断的继续。</text>
-			</view>
+		<view class="" style="margin-bottom: 30upx;">
+			在这里您可以看见很多陌生用户的动态信息
 		</view>
-		<view class="release">
-			<view class="releaseTitle">
-				咨询发布
-			</view>
-			<view class="releaseBj">
-				<text class="releaseBjTitle">让好产品走出去让更多人购买</text>
-				<text class="releaseBjText">在这里您可以出售您公司或代理产品及朋友的产品来互动营销，让指尖生意源源不断的继续。</text>
+		<view class="">
+			<view class="YhqList" v-for="(item,index) in 3" :key="index">
+				<view class="" style="width: 12%;">
+					<image class="headP" src="../../../static/img/qa.png" mode=""></image>
+				</view>
+				<view class="" style="width: 86%;">
+					<view class="" style="font-size: 16px;font-weight: 600;height: 80upx;line-height: 80upx;">
+						美丽的晚霞
+					</view>
+					<view class="" style="transform:scale(1,0.82);">
+						<service :dataList="dataList"></service>
+					</view>
+<!-- 					<view class="" style="line-height: 50upx;font-size: 14px;">
+						吉林省大家疯狂的世界纪录甲方都是减肥解决 了解了解
+						了计算机房龙卷风了解放军队酸辣粉
+					</view>
+					<view  class="YhqImgList">
+						<view v-for="(i,l) in 4" :key="l">
+							<image src="../../../static/img/video.png" mode=""></image>
+						</view>
+					</view> -->
+					<view class="HyflexB">
+						<view class="" style="font-size: 16px;font-weight: 600;width: 60%; text-indent:1em;">
+							活动
+						</view>
+						<view class="">
+							<image class="YhqBtn" src="../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
+							<image class="YhqBtn"  src="../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
+							<image class="YhqBtn"  src="../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
+						</view>
+					</view>
+				</view>
 			</view>
 		</view>
 	</view>
 </template>
 
 <script>
+	import service from '../../../component/service.vue'
 	export default {
+		components:{
+				service
+		},
 		data() {
 			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
-
-		},
-		methods: {
-
+				dataList:[{}]
+				}
+			},
 		}
-	}
 </script>
 
 <style>
@@ -47,43 +64,51 @@
 		font-size: 12px;
 		background-color: #080808;
 		color: #fff;
+		font-family: 方正工业黑-标准;
 	}
-	.fabiao{
-		width: 100%;
-		height: 300upx;
+	.HyFlexM{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	.fabiao image{
-		height: 248upx;
-		width: 248upx;
+	.HyflexB{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
-	
-	.releaseTitle{
+	.fontS{
+		font-size: 18px;
 		color: rgba(255, 255, 255, 100);
-		font-size: 22px;
 		text-align: left;
 		font-weight: 600;
-		font-family: 方正工业黑-标准;
-		margin-top: 12upx;
-		margin-bottom: 40upx;
+		margin-bottom: 10upx;
+		padding: 10upx 0;
 	}
-	.releaseBj{
-		width: 100%;
-		height: 660upx;
-		background-image: url(../../../static/tu.jpg);
-		border-radius: 20upx;
+	.YhqList{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin: 20upx 0;
 	}
-	.releaseBjTitle{
-		padding: 60% 2% 2% 2%;
-		font-size: 20px;
-		font-weight: 600;
-		display: block;
+	.headP{
+		width: 80upx;
+		height: 80upx;
+		border-radius: 50%;
 	}
-	.releaseBjText{
-		padding: 0 2%;
-		font-size: 18px;
-		display: block;
+	.YhqBtn{
+		width: 44upx;
+		height: 44upx;
+		margin: 0 10upx;
+	}
+	.YhqImgList{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.YhqImgList image{
+		width: 290upx;
+		height: 290upx;
+		
 	}
 </style>

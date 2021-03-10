@@ -1,4 +1,7 @@
 
+.service{
+		width: 100%;
+}
 .serviceBox{
 		margin-bottom: 40rpx;
 		overflow: hidden;
@@ -99,7 +102,7 @@
 }
 .introBox{
 	width: 94%;
-	font-size: 16px;
+	font-size: 14px;
 	height: 300rpx;
 	line-height: 100rpx;
 	font-weight: 600;
