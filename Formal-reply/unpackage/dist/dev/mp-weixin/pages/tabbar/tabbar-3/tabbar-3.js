@@ -130,62 +130,43 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var service = function service() {__webpack_require__.e(/*! require.ensure | component/service */ "component/service").then((function () {return resolve(__webpack_require__(/*! ../../../component/service.vue */ 89));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var _default =
 {
-  components: {
-    service: service },
-
   data: function data() {
     return {
-      dataList: [{}] };
+      title: 'Hello' };
 
-  } };exports.default = _default;
+  },
+  onLoad: function onLoad() {
+
+  },
+  methods: {} };exports.default = _default;
 
 /***/ }),
 
