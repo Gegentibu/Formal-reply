@@ -135,7 +135,8 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var rectangle = function rectangle() {__webpack_require__.e(/*! require.ensure | component/rectangle */ "component/rectangle").then((function () {return resolve(__webpack_require__(/*! ../../../component/rectangle.vue */ 75));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var expert = function expert() {__webpack_require__.e(/*! require.ensure | component/expert */ "component/expert").then((function () {return resolve(__webpack_require__(/*! ../../../component/expert.vue */ 82));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var service = function service() {__webpack_require__.e(/*! require.ensure | component/service */ "component/service").then((function () {return resolve(__webpack_require__(/*! ../../../component/service.vue */ 89));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var rectangle = function rectangle() {__webpack_require__.e(/*! require.ensure | component/rectangle */ "component/rectangle").then((function () {return resolve(__webpack_require__(/*! ../../../component/rectangle.vue */ 91));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var expert = function expert() {__webpack_require__.e(/*! require.ensure | component/expert */ "component/expert").then((function () {return resolve(__webpack_require__(/*! ../../../component/expert.vue */ 98));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var service = function service() {__webpack_require__.e(/*! require.ensure | component/service */ "component/service").then((function () {return resolve(__webpack_require__(/*! ../../../component/service.vue */ 105));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var comment = function comment() {__webpack_require__.e(/*! require.ensure | component/comment */ "component/comment").then((function () {return resolve(__webpack_require__(/*! ../../../component/comment.vue */ 157));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
 
 
 
@@ -251,7 +252,8 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     rectangle: rectangle,
     expert: expert,
-    service: service },
+    service: service,
+    comment: comment },
 
   data: function data() {
     return {

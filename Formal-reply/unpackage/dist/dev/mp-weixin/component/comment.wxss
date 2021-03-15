@@ -1,0 +1,22 @@
+
+.comment{
+	width: 750rpx;
+	background-color: #28272D;
+	position: fixed;
+	bottom: 0;
+	height: 650rpx;
+	border-top-left-radius: 20rpx;
+	border-top-right-radius: 20rpx;
+}
+.HyFlexB{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+

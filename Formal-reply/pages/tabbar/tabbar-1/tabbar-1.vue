@@ -110,11 +110,13 @@
 	import rectangle from '../../../component/rectangle.vue'
 	import expert from '../../../component/expert.vue'
 	import service from '../../../component/service.vue'
+	import comment from '../../../component/comment.vue'
 export default {
 	components:{
 			rectangle,
 			expert,
-			service
+			service,
+			comment
 	},
 	data() {
 		return {

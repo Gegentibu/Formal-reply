@@ -1,5 +1,63 @@
 <template>
 	<view class="Hybody">
+		<view class="comment" v-show="isComment">
+			<view class="HyFlexB" style="padding: 0 20upx;">
+				<view class="">
+					
+				</view>
+				<view class="">
+					321条评论
+				</view>
+				<view class="" style="font-size: 20px;" @click="closeComment">
+					×
+				</view>
+			</view>
+			<view class="HyFlexB" style="padding:10px;">
+				<view >
+					<image class="commentPimg" src="../../../../static/tu.jpg" mode=""></image>
+				</view>
+				<view class="" style="width: 500upx;">
+					<view class="" style="color: #787B7B;">
+						爱的故事
+					</view>
+					<view class="">
+						这才是一个城市的综合素质
+					</view>
+				</view>
+				<view class="">
+					<view class="HyFlexM" style="line-height: 40upx;">
+						24<image class="commentBimg" src="../../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
+					</view>
+					<view class="">
+						2020.09.02
+					</view>
+				</view>
+			</view>
+			<view class="HyFlexB" style="padding:10px;">
+				<view >
+					<image class="commentPimg" src="../../../../static/tu.jpg" mode=""></image>
+				</view>
+				<view class="" style="width: 500upx;">
+					<view class="" style="color: #787B7B;">
+						爱的故事
+					</view>
+					<view class="">
+						这才是一个城市的综合素质
+					</view>
+				</view>
+				<view class="">
+					<view class="HyFlexM" style="line-height: 40upx;">
+						24<image class="commentBimg" src="../../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
+					</view>
+					<view class="">
+						2020.09.02
+					</view>
+				</view>
+			</view>
+			<view class="commentInput">
+				<input type="text" value="" />
+			</view>
+		</view>
 		<view class="fontS">
 			答复CBD用户圈动态
 		</view>
@@ -29,13 +87,13 @@
 							</view>
 						</view>
 					</view>
-					<view class="HyflexB" :style=" index<1?'margin-top: 10upx;':'margin-top: -80rpx;'">
+					<view class="HyflexB" :style=" index<1?'margin-top: 10px;':'margin-top: -80rpx;'">
 						<view class="" style="font-size: 16px;font-weight: 600;width: 60%; text-indent:1em;">
 							活动
 						</view>
 						<view class="">
 							<image class="YhqBtn" src="../../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
-							<image class="YhqBtn"  src="../../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
+							<image @click="openComment" class="YhqBtn"  src="../../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
 							<image class="YhqBtn"  src="../../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
 						</view>
 					</view>
@@ -54,10 +112,19 @@
 		data() {
 			return {
 				dataList:[{}],
-				aab:true
+				isComment:false
 				}
 			},
+			methods:{
+				openComment(){
+					this.isComment = true;
+				},
+				closeComment(){
+					this.isComment =false;
+				}
+			}
 		}
+		
 </script>
 
 <style>
@@ -74,7 +141,7 @@
 		justify-content: center;
 		align-items: center;
 	}
-	.HyflexB{
+	.HyFlexB,.HyflexB{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -113,5 +180,39 @@
 		width: 293upx;
 		height: 293upx;
 		
+	}
+	.comment{
+		width: 750upx;
+		background-color: #28272D;
+		position: fixed;
+		bottom: 0;
+		height: 650upx;
+		border-top-left-radius: 20upx;
+		border-top-right-radius: 20upx;
+		z-index: 9999999;
+		left: 0;
+	}
+	.commentPimg{
+		width: 60upx;
+		height: 60upx;
+		border-radius: 50%;
+	}
+	.commentBimg{
+		width: 40upx;
+		height: 40upx;
+		border-radius: 50%;
+	}
+	.commentInput{
+		    width: 92%;
+		    height: 50rpx;
+		    background: #787B7B 10000%;
+		    border-radius: 30rpx;
+		    line-height: 50rpx;
+		    color: #fff;
+		    margin-left: 4%;
+		    position: fixed;
+		    bottom: 10rpx;
+		    z-index: 99999999;
+			text-indent: 1em;
 	}
 </style>

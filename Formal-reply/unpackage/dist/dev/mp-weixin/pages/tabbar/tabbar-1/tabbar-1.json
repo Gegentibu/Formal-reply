@@ -3,6 +3,7 @@
   "usingComponents": {
     "rectangle": "/component/rectangle",
     "expert": "/component/expert",
-    "service": "/component/service"
+    "service": "/component/service",
+    "comment": "/component/comment"
   }
 }

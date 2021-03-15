@@ -18,7 +18,7 @@
 	-webkit-align-items: center;
 	        align-items: center;
 }
-.HyflexB{
+.HyFlexB,.HyflexB{
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -75,5 +75,39 @@
 .YhqImgList image{
 	width: 293rpx;
 	height: 293rpx;
+}
+.comment{
+	width: 750rpx;
+	background-color: #28272D;
+	position: fixed;
+	bottom: 0;
+	height: 650rpx;
+	border-top-left-radius: 20rpx;
+	border-top-right-radius: 20rpx;
+	z-index: 9999999;
+	left: 0;
+}
+.commentPimg{
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 50%;
+}
+.commentBimg{
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 50%;
+}
+.commentInput{
+	    width: 92%;
+	    height: 50rpx;
+	    background: #787B7B 10000%;
+	    border-radius: 30rpx;
+	    line-height: 50rpx;
+	    color: #fff;
+	    margin-left: 4%;
+	    position: fixed;
+	    bottom: 10rpx;
+	    z-index: 99999999;
+		text-indent: 1em;
 }
 
