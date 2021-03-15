@@ -1,6 +1,6 @@
 
 .expertBox{
-		margin-bottom: 40rpx;
+		margin-top: 40rpx;
 }
 .expertBoxBj{
 	width: 100%;
@@ -80,6 +80,7 @@
 }
 .introRight{
 	width: 10%;
+	text-align: center;
 }
 .introLeftText{
 	width: 100%;

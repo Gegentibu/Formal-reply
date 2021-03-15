@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "uni-app",
+  "navigationBarTitleText": "答复CBD",
   "usingComponents": {
     "rectangle": "/component/rectangle",
     "expert": "/component/expert",

@@ -3,7 +3,7 @@
 		<view class="box" v-for="(item,index) in dataList" :key="index">
 			<view class="boxleft">
 				<view class="img">
-					<image src="../static/img/tabbar/home.png" mode=""></image>
+					<image src="../static/logo.png" mode=""></image>
 				</view>
 			</view>
 			<view class="boxmiddle">

@@ -13,11 +13,13 @@
 				<image class="sousuo" src="../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
 			</view>
 		</view>
-		<view class="" style="height: 130upx;">
+		<view class="" style="height: 100upx;">
 			
 		</view>
 		<view class="">
-			<expert :dataList="dataList"></expert>
+			<expert v-show="filterNum==0?true:false" :dataList="dataList"></expert>
+			<expert v-show="filterNum==2?true:false" :dataList="dataList"></expert>
+			<activity v-show="filterNum==1?true:false" :dataList="dataList"></activity>
 		</view>
 	</view>
 </template>
@@ -26,19 +28,22 @@
 	import RenDropdownFilter from '@/components/ren-dropdown-filter/ren-dropdown-filter.vue'
 	
 	import expert from '../../../component/expert.vue'
+	import activity from '../../../component/activity.vue'
     
 	export default {
         components:{
 			expert,
+			activity,
             RenDropdownFilter
         },
         data() {
             return {
 				dataList:[{},{},{}],
                 filterData:[
-                    [{ text: '综合', value: '' }, { text: '活动', value: 1 }, { text: '达人', value: 2 }, { text: '咨询', value: 3 }]
+                    [{ text: '综合', value: 0 }, { text: '活动', value: 1 }, { text: '达人', value: 2 }, { text: '咨询', value: 3 }, { text: '产品', value: 4 }, { text: '虚拟', value: 5 }, { text: '项目', value: 6 }]
                 ],
-                defaultIndex:[0]
+                defaultIndex:[2],
+				filterNum:2
             }
         },
         onLoad() {
@@ -46,7 +51,8 @@
         },
         methods: {
             onSelected(res){
-                console.log(res)
+                console.log(222,res[0][0].value)
+				this.filterNum = res[0][0].value;
             },
             dateChange(d){
                uni.showToast({

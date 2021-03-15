@@ -9,32 +9,34 @@
 		<view class="">
 			<view class="YhqList" v-for="(item,index) in 3" :key="index">
 				<view class="" style="width: 12%;">
-					<image class="headP" src="../../../static/img/qa.png" mode=""></image>
+					<image class="headP" src="../../../../static/tu.jpg" mode=""></image>
 				</view>
 				<view class="" style="width: 86%;">
 					<view class="" style="font-size: 16px;font-weight: 600;height: 80upx;line-height: 80upx;">
 						美丽的晚霞
 					</view>
-					<view class="" style="transform:scale(1,0.82);">
+					<view v-if="index>0" class="" style="transform:scale(1,0.82);">
 						<service :dataList="dataList"></service>
 					</view>
-<!-- 					<view class="" style="line-height: 50upx;font-size: 14px;">
-						吉林省大家疯狂的世界纪录甲方都是减肥解决 了解了解
-						了计算机房龙卷风了解放军队酸辣粉
-					</view>
-					<view  class="YhqImgList">
-						<view v-for="(i,l) in 4" :key="l">
-							<image src="../../../static/img/video.png" mode=""></image>
+					<view v-else-if="index<1" class="">
+						<view class="" style="line-height: 50upx;font-size: 14px;">
+							吉林省大家疯狂的世界纪录甲方都是减肥解决 了解了解
+							了计算机房龙卷风了解放军队酸辣粉
 						</view>
-					</view> -->
-					<view class="HyflexB">
+						<view  class="YhqImgList">
+							<view v-for="(i,l) in 4" :key="l">
+								<image src="../../../../static/huodong.png" mode=""></image>
+							</view>
+						</view>
+					</view>
+					<view class="HyflexB" :style=" index<1?'margin-top: 10upx;':'margin-top: -80rpx;'">
 						<view class="" style="font-size: 16px;font-weight: 600;width: 60%; text-indent:1em;">
 							活动
 						</view>
 						<view class="">
-							<image class="YhqBtn" src="../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
-							<image class="YhqBtn"  src="../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
-							<image class="YhqBtn"  src="../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
+							<image class="YhqBtn" src="../../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
+							<image class="YhqBtn"  src="../../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
+							<image class="YhqBtn"  src="../../../../static/img/tabbar/guanzhuactive.png" mode=""></image>
 						</view>
 					</view>
 				</view>
@@ -44,14 +46,15 @@
 </template>
 
 <script>
-	import service from '../../../component/service.vue'
+	import service from '../../../../component/service.vue'
 	export default {
 		components:{
 				service
 		},
 		data() {
 			return {
-				dataList:[{}]
+				dataList:[{}],
+				aab:true
 				}
 			},
 		}
@@ -88,7 +91,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
-		margin: 20upx 0;
+		margin-top: 20upx;
 	}
 	.headP{
 		width: 80upx;
@@ -107,8 +110,8 @@
 		flex-wrap: wrap;
 	}
 	.YhqImgList image{
-		width: 290upx;
-		height: 290upx;
+		width: 293upx;
+		height: 293upx;
 		
 	}
 </style>

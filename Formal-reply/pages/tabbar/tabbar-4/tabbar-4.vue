@@ -7,7 +7,7 @@
 			<view class="box">
 				<view class="boxleft">
 					<view class="img">
-						<image src="../../../static/img/tabbar/homeactive.png"></image>
+						<image src="../../../static/tu.jpg"></image>
 					</view>
 					<text class="text">我购买的服务</text>
 				</view>
@@ -18,7 +18,7 @@
 			<view class="box">
 				<view class="boxleft">
 					<view class="img">
-						<image src="../../../static/img/tabbar/homeactive.png"></image>
+						<image src="../../../static/tu.jpg"></image>
 					</view>
 					<text class="text">收藏我发布的服务</text>
 				</view>

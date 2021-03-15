@@ -62,7 +62,7 @@
 
 <style>
 	.expertBox{
-		margin-bottom: 40upx;
+		margin-top: 40upx;
 	}
 .expertBoxBj{
 	width: 100%;
@@ -130,6 +130,7 @@
 }
 .introRight{
 	width: 10%;
+	text-align: center;
 }
 .introLeftText{
 	width: 100%;

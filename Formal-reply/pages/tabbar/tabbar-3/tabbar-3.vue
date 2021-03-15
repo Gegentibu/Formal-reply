@@ -1,7 +1,7 @@
 <template>
 	<view  class="Hybody">
 		<view class="fabiao">
-			<image src="../../../static/fabiao.png" mode=""></image>
+			<image src="../../../static/fabiao.png" mode="" @click="goToFbdt"></image>
 		</view>
 		<view class="release">
 			<view class="releaseTitle">
@@ -35,7 +35,11 @@
 
 		},
 		methods: {
-
+			goToFbdt(){
+				uni.navigateTo({
+					url: '/pages/tabbar/tabbar-3/fabiaodongtai',
+				});
+			}
 		}
 	}
 </script>

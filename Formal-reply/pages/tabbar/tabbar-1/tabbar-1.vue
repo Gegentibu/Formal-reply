@@ -2,7 +2,7 @@
 	<view class="Hybody">
 		<view class="header HyFlexB">
 			<view class="headerImg HyFlexAb">
-				<image src="../../../static/logo.png" mode=""></image> 
+				<image src="../../../static/tu.jpg" mode=""></image> 
 				<text>上官喜儿</text>
 			</view>
 			<view class="PositionImg HyFlexM">
@@ -17,12 +17,12 @@
 			<view v-for="(item,index) in NavOptions" :key="index" class="Nav">
 				<view class="NavImage">
 					<view style="width: 100%;color: #F5AB36;text-indent:20upx;">●</view>
-					<image src="../../../static/img/release.png" mode=""></image>
+					<image src="../../../static/tu.jpg" mode=""></image>
 					<view style="width: 100%;text-align: center;font-size: 14px;line-height: 14px;">达人</view>
 				</view>
 			</view>
 		</view>
-		<view class="Cof">
+		<view class="Cof" @click="goToYhq">
 			用户圈
 		</view>
 		<view class="content">
@@ -161,7 +161,12 @@ export default {
 			setIndex3(e){
 			let index = e.currentTarget.dataset.index
 			this.thisindex3 = index
-			},					
+			},		
+			goToYhq(){
+				uni.navigateTo({
+					url: '/pages/tabbar/tabbar-1/yonghuquan/yonghuquan',
+				});
+			}
 		},
 		onLoad() {
 			var that = this;
@@ -312,6 +317,7 @@ export default {
 	line-height: 242upx;
 	font-weight: 600;
 	background-image: url(../../../static/img/cof.png);
-	background-repeat: 100%;
+	/* background-repeat: 100%; */
+	background-repeat: round;
 }
 </style>

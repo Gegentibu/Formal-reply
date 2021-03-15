@@ -298,6 +298,11 @@ __webpack_require__.r(__webpack_exports__);
     setIndex3: function setIndex3(e) {
       var index = e.currentTarget.dataset.index;
       this.thisindex3 = index;
+    },
+    goToYhq: function goToYhq() {
+      uni.navigateTo({
+        url: '/pages/tabbar/tabbar-1/yonghuquan/yonghuquan' });
+
     } },
 
   onLoad: function onLoad() {

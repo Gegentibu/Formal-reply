@@ -1,0 +1,11 @@
+
+.Hybody{
+	padding: 12rpx 32rpx;
+	height: 1445rpx;
+	background-color: #080808;
+	color: #fff;
+}
+.textarea{
+	width: 100%;
+}
+

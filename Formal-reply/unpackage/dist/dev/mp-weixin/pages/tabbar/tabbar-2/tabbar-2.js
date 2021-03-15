@@ -153,7 +153,10 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var RenDropdownFilter = function RenDropdownFilter() {__webpack_require__.e(/*! require.ensure | components/ren-dropdown-filter/ren-dropdown-filter */ "components/ren-dropdown-filter/ren-dropdown-filter").then((function () {return resolve(__webpack_require__(/*! @/components/ren-dropdown-filter/ren-dropdown-filter.vue */ 96));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var expert = function expert() {__webpack_require__.e(/*! require.ensure | component/expert */ "component/expert").then((function () {return resolve(__webpack_require__(/*! ../../../component/expert.vue */ 82));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var RenDropdownFilter = function RenDropdownFilter() {__webpack_require__.e(/*! require.ensure | components/ren-dropdown-filter/ren-dropdown-filter */ "components/ren-dropdown-filter/ren-dropdown-filter").then((function () {return resolve(__webpack_require__(/*! @/components/ren-dropdown-filter/ren-dropdown-filter.vue */ 96));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var expert = function expert() {__webpack_require__.e(/*! require.ensure | component/expert */ "component/expert").then((function () {return resolve(__webpack_require__(/*! ../../../component/expert.vue */ 82));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var activity = function activity() {__webpack_require__.e(/*! require.ensure | component/activity */ "component/activity").then((function () {return resolve(__webpack_require__(/*! ../../../component/activity.vue */ 124));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
 
 
 
@@ -185,15 +188,17 @@ __webpack_require__.r(__webpack_exports__);
 {
   components: {
     expert: expert,
+    activity: activity,
     RenDropdownFilter: RenDropdownFilter },
 
   data: function data() {
     return {
       dataList: [{}, {}, {}],
       filterData: [
-      [{ text: '综合', value: '' }, { text: '活动', value: 1 }, { text: '达人', value: 2 }, { text: '咨询', value: 3 }]],
+      [{ text: '综合', value: 0 }, { text: '活动', value: 1 }, { text: '达人', value: 2 }, { text: '咨询', value: 3 }, { text: '产品', value: 4 }, { text: '虚拟', value: 5 }, { text: '项目', value: 6 }]],
 
-      defaultIndex: [0] };
+      defaultIndex: [2],
+      filterNum: 2 };
 
   },
   onLoad: function onLoad() {
@@ -201,7 +206,8 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     onSelected: function onSelected(res) {
-      console.log(res);
+      console.log(222, res[0][0].value);
+      this.filterNum = res[0][0].value;
     },
     dateChange: function dateChange(d) {
       uni.showToast({
