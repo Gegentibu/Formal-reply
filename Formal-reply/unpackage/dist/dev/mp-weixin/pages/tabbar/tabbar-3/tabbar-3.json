@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-datetime-picker": "/components/uni-datetime-picker/uni-datetime-picker"
+  }
 }

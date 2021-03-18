@@ -1,7 +1,7 @@
 <template>
 	<view  class="Hybody">
 		<view class="fabiao">
-			<image src="../../../static/fabiao.png" mode=""></image>
+			<image src="../../../static/fabiao.png" mode="" @click="goToFbdt"></image>
 		</view>
 		<view class="release">
 			<view class="releaseTitle">
@@ -15,6 +15,33 @@
 		<view class="release">
 			<view class="releaseTitle">
 				咨询发布
+			</view>
+			<view class="releaseBj">
+				<text class="releaseBjTitle">让好产品走出去让更多人购买</text>
+				<text class="releaseBjText">在这里您可以出售您公司或代理产品及朋友的产品来互动营销，让指尖生意源源不断的继续。</text>
+			</view>
+		</view>
+		<view class="release">
+			<view class="releaseTitle">
+				产品发布
+			</view>
+			<view class="releaseBj">
+				<text class="releaseBjTitle">让好产品走出去让更多人购买</text>
+				<text class="releaseBjText">在这里您可以出售您公司或代理产品及朋友的产品来互动营销，让指尖生意源源不断的继续。</text>
+			</view>
+		</view>
+		<view class="release">
+			<view class="releaseTitle">
+				虚拟产品发布
+			</view>
+			<view class="releaseBj">
+				<text class="releaseBjTitle">让好产品走出去让更多人购买</text>
+				<text class="releaseBjText">在这里您可以出售您公司或代理产品及朋友的产品来互动营销，让指尖生意源源不断的继续。</text>
+			</view>
+		</view>
+		<view class="release">
+			<view class="releaseTitle">
+				项目发布
 			</view>
 			<view class="releaseBj">
 				<text class="releaseBjTitle">让好产品走出去让更多人购买</text>
@@ -35,7 +62,11 @@
 
 		},
 		methods: {
-
+			goToFbdt(){
+				uni.navigateTo({
+					url: '/pages/tabbar/tabbar-3/fabiaodongtai',
+				});
+			}
 		}
 	}
 </script>

@@ -93,6 +93,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
+try {
+  components = {
+    uniDatetimePicker: function() {
+      return __webpack_require__.e(/*! import() | components/uni-datetime-picker/uni-datetime-picker */ "components/uni-datetime-picker/uni-datetime-picker").then(__webpack_require__.bind(null, /*! @/components/uni-datetime-picker/uni-datetime-picker.vue */ 169))
+    }
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
+  }
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -130,37 +153,167 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniDatetimePicker = function uniDatetimePicker() {__webpack_require__.e(/*! require.ensure | components/uni-datetime-picker/uni-datetime-picker */ "components/uni-datetime-picker/uni-datetime-picker").then((function () {return resolve(__webpack_require__(/*! @/components/uni-datetime-picker/uni-datetime-picker.vue */ 169));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+  components: { uniDatetimePicker: uniDatetimePicker },
   data: function data() {
     return {
-      title: 'Hello' };
+      title: 'Hello',
+      array: ['请选择', '中国'],
+      index: 0 };
 
   },
   onLoad: function onLoad() {
@@ -171,6 +324,12 @@ var _default =
       uni.navigateTo({
         url: '/pages/tabbar/tabbar-3/fabiaodongtai' });
 
+    },
+    bindPickerChange: function bindPickerChange(e) {//改变的事件名
+      //console.log('picker发送选择改变，携带值为', e.target.value)   用于输出改变索引值
+      this.index = e.target.value; //将数组改变索引赋给定义的index变量
+      this.jg = this.array[this.index]; //将array【改变索引】的值赋给定义的jg变量
+      //	console.log("籍贯为：",this.jg)		//输出获取的籍贯值，例如：中国
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
