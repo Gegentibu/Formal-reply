@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "tidings": "/component/tidings"
+  }
+}

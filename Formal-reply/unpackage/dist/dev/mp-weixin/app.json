@@ -9,7 +9,17 @@
     "pages/tabbar-3-detial/tabbar-3-video/tabbar-3-video",
     "pages/tabbar-3-detial/tabbar-3-qa/tabbar-3-qa",
     "pages/tabbar/tabbar-1/yonghuquan/yonghuquan",
-    "pages/tabbar/tabbar-3/fabiaodongtai"
+    "pages/tabbar/tabbar-3/fabiaodongtai",
+    "pages/tabbar/tabbar-3/chanpinfabu",
+    "pages/tabbar/tabbar-3/huodongfabu",
+    "pages/tabbar/tabbar-3/shitifabu",
+    "pages/tabbar/tabbar-3/xiangmufabu",
+    "pages/tabbar/tabbar-3/xunichanpinfabu",
+    "pages/tabbar/tabbar-3/zixunfabu",
+    "pages/tabbar/tabbar-4/goumai",
+    "pages/tabbar/tabbar-4/shoucang",
+    "pages/tabbar/tabbar-4/xiangqing",
+    "component/details"
   ],
   "subPackages": [],
   "window": {

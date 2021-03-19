@@ -1,6 +1,6 @@
 <template>
 	<view class="rectangle">
-		<view class="rectangleBox" v-for="(item,index) in dataList" :key="index">
+		<view class="rectangleBox" v-for="(item,index) in dataList" :key="index" @click="gotoDt">
 			<view class="rectangleLeft">
 				<image src="../static/tu.jpg" mode=""></image>
 			</view>
@@ -49,7 +49,11 @@
 			},
 		},
 		methods:{
-
+			gotoDt(){
+				uni.navigateTo({
+					url: '/component/details',
+				});
+			}
 		}
 	}
 </script>

@@ -1,6 +1,6 @@
 <template>
 	<view class="information">
-		<view class="box" v-for="(item,index) in dataList" :key="index">
+		<view class="box" v-for="(item,index) in dataList" :key="index" @click="goToXq">
 			<view class="boxleft">
 				<view class="img">
 					<image src="../static/logo.png" mode=""></image>
@@ -32,7 +32,11 @@
 			},
 		},
 		methods:{
-
+			goToXq(){
+				uni.navigateTo({
+					url: '/pages/tabbar/tabbar-4/xiangqing',
+				});
+			}
 		}
 	}
 </script>

@@ -4,7 +4,7 @@
 			消息
 		</view>
 		<view class="content">
-			<view class="box">
+			<view class="box" @click="goToGm">
 				<view class="boxleft">
 					<view class="img">
 						<image src="../../../static/tu.jpg"></image>
@@ -15,7 +15,7 @@
 					2
 				</view>
 			</view>
-			<view class="box">
+			<view class="box" @click="goToSc">
 				<view class="boxleft">
 					<view class="img">
 						<image src="../../../static/tu.jpg"></image>
@@ -48,7 +48,16 @@
 
 		},
 		methods: {
-
+			goToGm(){
+				uni.navigateTo({
+					url: '/pages/tabbar/tabbar-4/goumai',
+				});
+			},
+			goToSc(){
+				uni.navigateTo({
+					url: '/pages/tabbar/tabbar-4/shoucang',
+				});
+			},
 		}
 	}
 </script>

@@ -1,6 +1,6 @@
 <template>
 	<view class="expert">
-		<view class="expertBox" v-for="(item,index) in dataList" :key="index">
+		<view class="expertBox" v-for="(item,index) in dataList" :key="index"  @click="gotoDt">
 			<view class="expertBoxBj">
 				
 			</view>
@@ -55,7 +55,11 @@
 			},
 		},
 		methods:{
-
+			gotoDt(){
+				uni.navigateTo({
+					url: '/component/details',
+				});
+			}
 		}
 	}
 </script>

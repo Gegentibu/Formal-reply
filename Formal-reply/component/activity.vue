@@ -1,6 +1,6 @@
 <template>
 	<view class="activity">
-		<view class="activityBox" v-for="(item,index) in dataList" :key="index">
+		<view class="activityBox" v-for="(item,index) in dataList" :key="index" @click="gotoDt">
 			<view class="activityBoxBj">
 				
 			</view>
@@ -54,7 +54,11 @@
 			},
 		},
 		methods:{
-
+			gotoDt(){
+				uni.navigateTo({
+					url: '/component/details',
+				});
+			}
 		}
 	}
 </script>

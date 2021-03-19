@@ -20,6 +20,7 @@
 			<expert v-show="filterNum==0?true:false" :dataList="dataList"></expert>
 			<expert v-show="filterNum==2?true:false" :dataList="dataList"></expert>
 			<activity v-show="filterNum==1?true:false" :dataList="dataList"></activity>
+			<activity v-show="filterNum>2?true:false" :dataList="dataList"></activity>
 		</view>
 	</view>
 </template>

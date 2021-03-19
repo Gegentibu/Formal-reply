@@ -1,0 +1,48 @@
+
+.Hybody.data-v-0639000c {
+	/* padding: 0 32upx; */
+	height: 100%;
+	font-size: 12px;
+	background-color: #080808;
+	color: #fff;
+}
+.title.data-v-0639000c{
+	color: rgba(255, 255, 255, 100);
+	font-size: 22px;
+	text-align: left;
+	font-weight: 600;
+	font-family: 方正工业黑-标准;
+	margin-bottom: 10rpx;
+	padding: 30rpx 32rpx;
+	border-bottom: 1px solid #393942;
+}
+.fuwuList.data-v-0639000c{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	margin: 40rpx 0;
+}
+.pImg image.data-v-0639000c{
+		border-radius: 50%;
+		width:121rpx;
+		height: 121rpx;
+}
+.shijianImg image.data-v-0639000c{
+	width: 26rpx;
+	height: 26rpx;
+	margin-left: 30rpx;
+}
+.fuwuImg image.data-v-0639000c{
+	width:121rpx;
+	height: 121rpx;
+	border-radius: 10rpx;
+}
+
