@@ -59,7 +59,6 @@ page.data-v-c53c40ec {
 .filter-wrapper .inner-wrapper .navs.data-v-c53c40ec {
   position: relative;
   height: 110rpx;
-  padding: 0 40rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -79,6 +78,9 @@ page.data-v-c53c40ec {
   -webkit-flex: 1;
           flex: 1;
   height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;

@@ -161,7 +161,7 @@ page {
         .navs {
             position: relative;
             height: 110rpx;
-            padding: 0 40rpx;
+            // padding: 0 40rpx;//
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -174,6 +174,7 @@ page {
             & > view {
                 flex: 1;
                 height: 100%;
+				justify-content: center;
                 flex-direction: row;
                 z-index: 999;
             }
