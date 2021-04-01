@@ -59,7 +59,8 @@
 .sunui-uploader-inputbox {
   position: relative;
   margin-bottom: 16rpx;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #ededed;
   display: -webkit-box;
   display: -webkit-flex;
@@ -137,7 +138,8 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 .sunui-uploader-hover {
-  box-shadow: 0 0 0 #e5e5e5;
+  -webkit-box-shadow: 0 0 0 #e5e5e5;
+          box-shadow: 0 0 0 #e5e5e5;
   background: #e5e5e5;
 }
 

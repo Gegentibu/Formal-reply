@@ -71,7 +71,8 @@ page.data-v-c53c40ec {
   background-color: #080808;
   color: #FFF;
   z-index: 999;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .filter-wrapper .inner-wrapper .navs > view.data-v-c53c40ec {
   -webkit-box-flex: 1;
@@ -118,8 +119,10 @@ page.data-v-c53c40ec {
   max-height: 500rpx;
   background-color: #080808;
   color: #fff;
-  border-bottom-left-radius: 20rpx;
-  border-bottom-right-radius: 20rpx;
+  -webkit-border-bottom-left-radius: 20rpx;
+          border-bottom-left-radius: 20rpx;
+  -webkit-border-bottom-right-radius: 20rpx;
+          border-bottom-right-radius: 20rpx;
   overflow: scroll;
   z-index: 999;
   -webkit-transition: all 1s linear;

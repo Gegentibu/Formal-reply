@@ -52,7 +52,8 @@
 .headP{
 	width: 80rpx;
 	height: 80rpx;
-	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
 }
 .YhqBtn{
 	width: 44rpx;
@@ -82,26 +83,31 @@
 	position: fixed;
 	bottom: 0;
 	height: 650rpx;
-	border-top-left-radius: 20rpx;
-	border-top-right-radius: 20rpx;
+	-webkit-border-top-left-radius: 20rpx;
+	        border-top-left-radius: 20rpx;
+	-webkit-border-top-right-radius: 20rpx;
+	        border-top-right-radius: 20rpx;
 	z-index: 9999999;
 	left: 0;
 }
 .commentPimg{
 	width: 60rpx;
 	height: 60rpx;
-	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
 }
 .commentBimg{
 	width: 40rpx;
 	height: 40rpx;
-	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
 }
 .commentInput{
 	    width: 92%;
 	    height: 50rpx;
 	    background: #787B7B 10000%;
-	    border-radius: 30rpx;
+	    -webkit-border-radius: 30rpx;
+	            border-radius: 30rpx;
 	    line-height: 50rpx;
 	    color: #fff;
 	    margin-left: 4%;

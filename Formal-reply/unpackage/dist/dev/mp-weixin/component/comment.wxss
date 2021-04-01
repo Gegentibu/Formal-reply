@@ -5,8 +5,10 @@
 	position: fixed;
 	bottom: 0;
 	height: 650rpx;
-	border-top-left-radius: 20rpx;
-	border-top-right-radius: 20rpx;
+	-webkit-border-top-left-radius: 20rpx;
+	        border-top-left-radius: 20rpx;
+	-webkit-border-top-right-radius: 20rpx;
+	        border-top-right-radius: 20rpx;
 }
 .HyFlexB{
 	display: -webkit-box;
