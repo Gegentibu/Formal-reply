@@ -1,19 +1,19 @@
 <template>
 	<view class="Hybody">
 		<view class="titleText" style="margin-top:30upx;">
-			我的订单
+			审核反馈
 		</view>
 		<view class="" style="margin: 80upx 0 0 0;">
 			<view class="content">
 				<view class="nuter">
 					<view :class="target==0?'active':''" @click="setIndex" data-index="0">
-							全部
+							审核中
 					 </view>
 					<view :class="target==1?'active':''" @click="setIndex" data-index="1">
-							收入订单
+							审核失败
 					 </view>
 					 <view :class="target==2?'active':''" @click="setIndex" data-index="2">
-					 		支出订单
+					 		已发布
 					  </view>
 				</view>
 				<swiper 
@@ -24,13 +24,28 @@
 				:style="swiperHeight"
 				circular>
 					<swiper-item>
-						<dingdan id="swiperHeight" :dataList="dataList"></dingdan>
+						<view class="release">
+							<view class="releaseBj" @click="goToXm">
+								<text class="releaseBjTitle">让好产品走出去让更多人购买</text>
+								<text class="releaseBjText">在这里您可以出售您公司或代理产品及朋友的产品来互动营销，让指尖生意源源不断的继续。</text>
+							</view>
+						</view>
 					</swiper-item>
 					<swiper-item>
-						<dingdan :dataList="dataList"></dingdan>
+						<view class="release">
+							<view class="releaseBj" @click="goToXm">
+								<text class="releaseBjTitle">让好产品走出去让更多人购买</text>
+								<text class="releaseBjText">在这里您可以出售您公司或代理产品及朋友的产品来互动营销，让指尖生意源源不断的继续。</text>
+							</view>
+						</view>
 					</swiper-item>
 					<swiper-item>
-						<dingdan :dataList="dataList"></dingdan>
+						<view class="release">
+							<view class="releaseBj" @click="goToXm">
+								<text class="releaseBjTitle">让好产品走出去让更多人购买</text>
+								<text class="releaseBjText">在这里您可以出售您公司或代理产品及朋友的产品来互动营销，让指尖生意源源不断的继续。</text>
+							</view>
+						</view>
 					</swiper-item>
 				</swiper>
 			</view>	
@@ -39,11 +54,7 @@
 </template>
 
 <script>
-	import dingdan from '../../../component/dingdan.vue'
 	    export default {
-	        components:{
-	            dingdan
-	        },
 	        data() {
 	            return {
 					target:0,
@@ -186,5 +197,31 @@
 		/* height: 99%; */
 		box-sizing: border-box;
 		padding: 1rpx;
+	}
+	.releaseTitle{
+		color: rgba(255, 255, 255, 100);
+		font-size: 22px;
+		text-align: left;
+		font-weight: 600;
+		font-family: 方正工业黑-标准;
+		margin-top: 12upx;
+		margin-bottom: 40upx;
+	}
+	.releaseBj{
+		width: 100%;
+		height: 660upx;
+		background-image: url(../../../static/tu.jpg);
+		border-radius: 20upx;
+	}
+	.releaseBjTitle{
+		padding: 60% 2% 2% 2%;
+		font-size: 20px;
+		font-weight: 600;
+		display: block;
+	}
+	.releaseBjText{
+		padding: 0 2%;
+		font-size: 18px;
+		display: block;
 	}
 </style>

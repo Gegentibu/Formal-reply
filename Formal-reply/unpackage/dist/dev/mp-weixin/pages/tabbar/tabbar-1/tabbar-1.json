@@ -1,6 +1,6 @@
 {
   "navigationBarTitleText": "答复CBD",
   "usingComponents": {
-    "guanzhu": "/component/guanzhu"
+    "tidings": "/component/tidings"
   }
 }

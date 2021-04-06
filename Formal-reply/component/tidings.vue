@@ -11,8 +11,7 @@
 				<text class="text">我已收到您发来的消息</text>
 			</view>
 			<view class="boxright">
-				<text class="text">今天</text>
-				<text class="num">1</text>
+				<text class="text">已关注</text>
 			</view>
 		</view>
 	</view>
@@ -60,10 +59,12 @@
 		justify-content: flex-start;
 	}
 	.boxright{
-		width: 80upx;
+		width: 140upx;
 		height: 121upx;
+		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-end;
+		align-items: center;
 	}
 	.boxright .num{
 		display: flex;

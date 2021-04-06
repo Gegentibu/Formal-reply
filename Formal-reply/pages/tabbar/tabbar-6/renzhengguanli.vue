@@ -1,19 +1,19 @@
 <template>
 	<view class="Hybody">
 		<view class="titleText" style="margin-top:30upx;">
-			我的订单
+			认证管理
 		</view>
 		<view class="" style="margin: 80upx 0 0 0;">
 			<view class="content">
 				<view class="nuter">
 					<view :class="target==0?'active':''" @click="setIndex" data-index="0">
-							全部
+							实名认证
 					 </view>
 					<view :class="target==1?'active':''" @click="setIndex" data-index="1">
-							收入订单
+							职业认证
 					 </view>
 					 <view :class="target==2?'active':''" @click="setIndex" data-index="2">
-					 		支出订单
+					 		商家认证
 					  </view>
 				</view>
 				<swiper 
@@ -24,13 +24,70 @@
 				:style="swiperHeight"
 				circular>
 					<swiper-item>
-						<dingdan id="swiperHeight" :dataList="dataList"></dingdan>
+						<view class="shimingRz" style="padding: 0 60upx;">
+							<view class="">
+								<image style="width: 140upx;height: 140upx;" src="../../../static/img/release.png" mode=""></image>
+							</view>
+							<view class="HyFlexL">
+								真实姓名<input type="text" value="" placeholder="请输入真实姓名" />
+							</view>
+							<view class="HyFlexL">
+								身份证号码<input type="text" value="" placeholder="请输入18位身份证号码" />
+							</view>
+							<view class="">
+								<button type="default" style="background-color: #120DB5;color: #fff;">下一步</button>
+							</view>
+							<view class="" style="color: #28272D;">
+								信息仅用于身份认证提升您的账号和资金安全性
+								                昔望保障您的信息安全
+							</view>
+						</view>
 					</swiper-item>
 					<swiper-item>
-						<dingdan :dataList="dataList"></dingdan>
+						<view class=""  style="padding: 0 60upx;">
+							<view class="fabuList">
+								<view class="fabuLeftText">
+									选择行业  
+								</view>
+								<view class="fabuIpt">
+									<view class="uni-form-item uni-column">
+										<picker @change="bindPickerChange" :range="array">	
+											<label class="">{{array[index]}}</label>		
+										</picker>
+									</view>
+								</view>
+							</view>
+							<view class="fabuList">
+								<view class="fabuLeftText">
+									选择职业   
+								</view>
+								<view class="fabuIpt">
+									<view class="uni-form-item uni-column">
+										<picker @change="bindPickerChange" :range="array">	
+											<label class="">{{array[index]}}</label>		
+										</picker>
+									</view>
+								</view>
+							</view>
+							<view class="" style="margin-top: 40upx;">
+								<view class="fabuLeftText">
+									上传职业证明材料
+								</view>
+								<view class="">
+									<upimg></upimg>
+								</view>
+								<view class="" style="margin-bottom: 20upx;color: #3B3838;">
+									备注：上传材料可选：名片、工作证、毕业证、相
+									关证书单位盖章证明文件等等。
+								</view>
+							</view>
+							<view class="">
+								<button type="default" style="background-color: #120DB5;color: #fff;">下一步</button>
+							</view>
+						</view>
 					</swiper-item>
 					<swiper-item>
-						<dingdan :dataList="dataList"></dingdan>
+
 					</swiper-item>
 				</swiper>
 			</view>	
@@ -39,17 +96,19 @@
 </template>
 
 <script>
-	import dingdan from '../../../component/dingdan.vue'
+	import uniDatetimePicker from '@/components/uni-datetime-picker/uni-datetime-picker.vue'
+	import upimg from '../../../component/sunui-upimg.vue'
 	    export default {
-	        components:{
-	            dingdan
-	        },
+			components: {uniDatetimePicker,upimg},
 	        data() {
 	            return {
 					target:0,
 					swiperHeight:'height:500px',
 					thisindex:0,
 					dataList:[{},{},{}],
+					array:['请选择','中国'],
+					index:0,
+					imageValue:[]
 	            }
 	        },
 	        onLoad() {
@@ -61,6 +120,12 @@
 				}).exec();
 	        },
 	        methods: {
+				bindPickerChange: function(e) {		//改变的事件名
+					//console.log('picker发送选择改变，携带值为', e.target.value)   用于输出改变索引值
+					this.index = e.target.value			//将数组改变索引赋给定义的index变量
+					this.jg=this.array[this.index]		//将array【改变索引】的值赋给定义的jg变量
+				//	console.log("籍贯为：",this.jg)		//输出获取的籍贯值，例如：中国
+				},
 				toggle(e){
 						let index = e.detail.current
 						this.target = index
@@ -92,6 +157,21 @@
 		color: #fff;
 		text-align: left;
 	}
+	.HyFlexL{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	.fabuList{
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin: 10upx 0;
+		text-align: left;
+	}
+	.fabuIpt{
+		width: 400upx;
+	}
 	.titleText{
 		color: rgba(255, 255, 255, 100);
 		font-size: 22px;
@@ -107,7 +187,19 @@
 		background-color: #080808;
 		top: 0;
 	}
-	
+	.fabuLeftText {
+		text-align: left;
+	}
+	.uni-column{
+		background-color: #fff;
+		color: #000000;
+		/* text-align: right; */
+		border: 1px solid #E5E5E5;
+		    border-radius: 5px;
+		    padding: 3px 10px;
+		    box-sizing: border-box;
+		    cursor: pointer;
+	}
 	.miList{
 		display: flex;
 		justify-content: space-between;
@@ -186,5 +278,11 @@
 		/* height: 99%; */
 		box-sizing: border-box;
 		padding: 1rpx;
+	}
+	.shimingRz{
+		font-size: 16px;
+	}
+	.shimingRz view {
+		margin: 40upx 0;
 	}
 </style>
