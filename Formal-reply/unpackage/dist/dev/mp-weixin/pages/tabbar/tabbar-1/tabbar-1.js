@@ -135,7 +135,70 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var tidings = function tidings() {__webpack_require__.e(/*! require.ensure | component/tidings */ "component/tidings").then((function () {return resolve(__webpack_require__(/*! ../../../component/tidings.vue */ 207));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var rectangle = function rectangle() {__webpack_require__.e(/*! require.ensure | component/rectangle */ "component/rectangle").then((function () {return resolve(__webpack_require__(/*! ../../../component/rectangle.vue */ 232));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var expert = function expert() {__webpack_require__.e(/*! require.ensure | component/expert */ "component/expert").then((function () {return resolve(__webpack_require__(/*! ../../../component/expert.vue */ 186));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var service = function service() {__webpack_require__.e(/*! require.ensure | component/service */ "component/service").then((function () {return resolve(__webpack_require__(/*! ../../../component/service.vue */ 207));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var comment = function comment() {__webpack_require__.e(/*! require.ensure | component/comment */ "component/comment").then((function () {return resolve(__webpack_require__(/*! ../../../component/comment.vue */ 266));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -187,28 +250,87 @@ __webpack_require__.r(__webpack_exports__);
 
 {
   components: {
-    tidings: tidings },
+    rectangle: rectangle,
+    expert: expert,
+    service: service,
+    comment: comment },
 
   data: function data() {
     return {
-      dataList: [{}, {}, {}],
-      title: 'Hello' };
-
-  },
-  onLoad: function onLoad() {
+      NavOptions: [{}, {}, {}, {}, {}, {}],
+      target: 0,
+      thisindex: 0,
+      swiperHeight: 0,
+      target2: 0,
+      thisindex2: 0,
+      swiperHeight2: 0,
+      target3: 0,
+      thisindex3: 0,
+      swiperHeight3: 0,
+      dataList: [{}, {}, {}] };
 
   },
   methods: {
-    goToGm: function goToGm() {
+    // 切换触发的事件
+    toggle: function toggle(e) {
+      var index = e.detail.current;
+      this.target = index;
+    },
+    // 切换触发的事件
+    toggle2: function toggle2(e) {
+      var index = e.detail.current;
+      this.target2 = index;
+    },
+    // 点击nav控制下面的展示
+    toggle3: function toggle3(e) {
+      var index = e.detail.current;
+      this.target3 = index;
+    },
+    // 点击nav控制下面的展示
+    setIndex: function setIndex(e) {
+      var index = e.currentTarget.dataset.index;
+      this.thisindex = index;
+    },
+    // 点击nav控制下面的展示
+    setIndex2: function setIndex2(e) {
+      var index = e.currentTarget.dataset.index;
+      this.thisindex2 = index;
+    },
+    // 点击nav控制下面的展示
+    setIndex3: function setIndex3(e) {
+      var index = e.currentTarget.dataset.index;
+      this.thisindex3 = index;
+    },
+    goToYhq: function goToYhq() {
       uni.navigateTo({
-        url: '/pages/tabbar/tabbar-4/goumai' });
+        url: '/pages/tabbar/tabbar-1/yonghuquan/yonghuquan' });
 
     },
-    goToSc: function goToSc() {
+    goToFl: function goToFl() {
       uni.navigateTo({
-        url: '/pages/tabbar/tabbar-4/shoucang' });
+        url: '/pages/tabbar/tabbar-1/shouyefenlei' });
 
-    } } };exports.default = _default;
+    } },
+
+  onLoad: function onLoad() {
+    var that = this;
+    this.swiperHeight = 'height:' + this.dataList.length * 180 + 'px';
+    this.swiperHeight2 = 'height:' + this.dataList.length * 730 + 'px';
+    this.swiperHeight3 = 'height:' + this.dataList.length * 370 + 'px';
+    var query = uni.createSelectorQuery().in(this);
+    query.select('#swiperHeight').boundingClientRect(function (data) {
+      console.log(data.height);
+      that.swiperHeight = 'height:' + data.height + 'px';
+    }).exec();
+    query.select('#swiperHeight2').boundingClientRect(function (data) {
+      console.log(data.height);
+      that.swiperHeight2 = 'height:' + data.height + 'px';
+    }).exec();
+    query.select('#swiperHeight3').boundingClientRect(function (data) {
+      console.log(data.height);
+      that.swiperHeight3 = 'height:' + data.height + 'px';
+    }).exec();
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var upimg = function upimg() {Promise.all(/*! require.ensure | component/sunui-upimg */[__webpack_require__.e("common/vendor"), __webpack_require__.e("component/sunui-upimg")]).then((function () {return resolve(__webpack_require__(/*! ../../../component/sunui-upimg.vue */ 221));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var upimg = function upimg() {Promise.all(/*! require.ensure | component/sunui-upimg */[__webpack_require__.e("common/vendor"), __webpack_require__.e("component/sunui-upimg")]).then((function () {return resolve(__webpack_require__(/*! ../../../component/sunui-upimg.vue */ 214));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

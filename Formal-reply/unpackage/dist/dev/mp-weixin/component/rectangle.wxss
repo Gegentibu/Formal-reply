@@ -1,0 +1,104 @@
+
+.rectangleBox{
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-wrap: no-wrap;
+	        flex-wrap: no-wrap;
+	-webkit-border-radius: 38rpx;
+	        border-radius: 38rpx;
+	margin-bottom: 30rpx;
+}
+.rectangleLeft {
+	width: 260rpx;
+	margin: 24rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.rectangleLeft image{
+	width: 260rpx;
+	height: 260rpx;
+	-webkit-border-radius: 40rpx;
+	        border-radius: 40rpx;
+}
+.rectangleRight{
+	width: 340rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.rectangleRight image{
+	width: 30rpx;
+	height: 30rpx;
+}
+.rectangleRightBig{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 50rpx;
+	line-height: 50rpx;
+	margin-right: 10rpx;
+}
+.rectangleRight .rectangleRightBig image{
+	width: 36rpx;
+	height: 36rpx;
+}
+.rectangleRightFooter{
+	width: 340rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+}
+.text{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	height: 50rpx;
+	line-height: 50rpx;
+}
+.text image,.rectangleRightBig image{
+	margin-right: 10rpx;
+}
+.rectangleBox:nth-child(1){
+	background:#07EE14;
+}
+.rectangleBox:nth-child(2){
+	background:#120DB5;
+}
+.rectangleBox:nth-child(3){
+	background:#A814D2;
+}
+
