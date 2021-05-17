@@ -1,7 +1,7 @@
 <template>
 	<view class="Hybody">
 		<view class="title">
-			消息
+			推广海报
 		</view>
 		<view class="haiBao">
 			<view class="HyflexB" style="margin: 20upx 0;">

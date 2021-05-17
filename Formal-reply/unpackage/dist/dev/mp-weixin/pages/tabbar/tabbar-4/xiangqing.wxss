@@ -9,10 +9,8 @@
 .head{
 	height: 300rpx;
 	background-color: rgb(62,63,59);
-	-webkit-border-bottom-left-radius: 80rpx;
-	        border-bottom-left-radius: 80rpx;
-	-webkit-border-bottom-right-radius: 80rpx;
-	        border-bottom-right-radius: 80rpx;
+	border-bottom-left-radius: 80rpx;
+	border-bottom-right-radius: 80rpx;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
@@ -29,8 +27,7 @@
 .head image{
 	width: 120rpx;
 	height: 120rpx;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 }
 .dfMes{
 	display: -webkit-box;
@@ -56,8 +53,7 @@
 	text-align: right;
 }
 .wdMesImg,.dfMesImg{
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 	width: 110rpx;
 	height: 110rpx;
 	margin: 0 14rpx;
@@ -69,8 +65,7 @@
 }
 .dfMes .messige .messigeImg,.wdMes .messige .messigeImg{
 	max-width: 470rpx;
-	-webkit-border-radius: 20rpx;
-	        border-radius: 20rpx;
+	border-radius: 20rpx;
 	border: 2px solid #333333;
 }
 

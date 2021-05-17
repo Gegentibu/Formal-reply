@@ -11,7 +11,7 @@
 				每一个黑卡实体店铺消费都有折扣，最低至五折消费。
 			</view>
 			<view class="">
-				<button type="default" style="color: #fff;background-color: #120DB5;border-radius: 40upx;width: 60%;">开通会员</button>
+				<button type="default" style="color: #fff;background-color: #120DB5;border-radius: 40upx;width: 60%;" @click="gotoUrl('开通会员')">开通会员</button>
 			</view>
 		</view>
 		<view class="HyFlexBb" style="margin-top:30upx;">
@@ -72,7 +72,14 @@
 	                   icon:'none',
 	                   title:d
 	               })
-	            }
+	            },
+				gotoUrl(e){
+					if(e=='开通会员'){
+						uni.navigateTo({
+							url: '/pages/tabbar/tabbar-10/heikatongguo',
+						});	
+					}
+				}
 	        }
 	    }
 </script>

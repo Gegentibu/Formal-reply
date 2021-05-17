@@ -2,6 +2,12 @@
 	"pages": [
 		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
+			"path": "pages/tabbar/logn",
+			"style": {
+				"navigationBarTitleText": "答复CBD"
+			}
+		},
+		{
 			"path": "pages/tabbar/tabbar-1/tabbar-1",
 			"style": {
 				"navigationBarTitleText": "答复CBD"
@@ -21,6 +27,10 @@
 		},
 		{
 			"path": "pages/tabbar/tabbar-5/tabbar-5",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-9/tabbar-9",
 			"style": {}
 		},
 		{
@@ -85,6 +95,50 @@
 		},
 		{
 			"path": "component/details",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-7/tabbar-7",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-6/tuiguanghaibao",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-6/wodedingdan",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-6/wodeguanzhu",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-6/wodeshoucang",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-6/shenhefankui",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-6/renzhengguanli",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-8/tixian",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-10/tabbar-10",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-10/heikashangjia",
+			"style": {}
+		},
+		{
+			"path": "pages/tabbar/tabbar-10/heikatongguo",
 			"style": {}
 		}
 	],

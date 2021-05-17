@@ -12,8 +12,7 @@
 	        align-items: center;
 	-webkit-flex-wrap: no-wrap;
 	        flex-wrap: no-wrap;
-	-webkit-border-radius: 38rpx;
-	        border-radius: 38rpx;
+	border-radius: 38rpx;
 	margin-bottom: 30rpx;
 }
 .rectangleLeft {
@@ -29,8 +28,7 @@
 .rectangleLeft image{
 	width: 260rpx;
 	height: 260rpx;
-	-webkit-border-radius: 40rpx;
-	        border-radius: 40rpx;
+	border-radius: 40rpx;
 }
 .rectangleRight{
 	width: 340rpx;

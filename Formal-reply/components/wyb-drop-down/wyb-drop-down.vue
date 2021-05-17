@@ -245,7 +245,7 @@
 			},
 			onContentItemsTap(index) {
 				this.contentActiveIndexList[this.headerActiveIndex]['index'] = index
-				// this.$forceUpdate()
+				this.$forceUpdate()
 				let event = {
 					headerIndex: this.headerActiveIndex,
 					header: this.options[this.headerActiveIndex]['header'],

@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
 //
 //
 //
@@ -399,7 +399,81 @@ var _default =
   onLoad: function onLoad() {
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    goToUrl: function goToUrl(e) {
+      if (e == '黑钻会员') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-9/tabbar-9' });
+
+      }
+      if (e == '立即开通') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-9/tabbar-9' });
+
+      }
+      if (e == '我要赚钱') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-9/tabbar-9' });
+
+      }
+      if (e == '会员中心') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-9/tabbar-9' });
+
+      }
+      if (e == '我的主页') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-7/tabbar-7' });
+
+      }
+      if (e == '推广海报') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-6/tuiguanghaibao' });
+
+      }
+      if (e == '我的收藏') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-6/wodeshoucang' });
+
+      }
+      if (e == '我的关注') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-6/wodeguanzhu' });
+
+      }
+      if (e == '我的订单') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-6/wodedingdan' });
+
+      }
+      if (e == '主页设置') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-6/zhuyeshezhi' });
+
+      }
+      if (e == '认证管理') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-6/renzhengguanli' });
+
+      }
+      if (e == '我的审核') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-6/shenhefankui' });
+
+      }
+      if (e == '提现') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-8/tixian' });
+
+      }
+      if (e == '开通黑卡') {
+        uni.navigateTo({
+          url: '/pages/tabbar/tabbar-10/tabbar-10' });
+
+      }
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 

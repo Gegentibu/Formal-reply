@@ -1,0 +1,41 @@
+
+.Hybody.data-v-31bc7915{
+	padding: 0 40rpx;
+	padding-top: 50rpx;
+	height: 1500rpx;
+	font-size: 14px;
+	background-color: #080808;
+	color: #fff;
+	text-align: left;
+	padding-bottom: 60rpx;
+}
+.HyFlexBb.data-v-31bc7915{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: end;
+	-webkit-align-items: flex-end;
+	        align-items: flex-end;
+}
+.titleText.data-v-31bc7915{
+	color: rgba(255, 255, 255, 100);
+	font-size: 22px;
+	text-align: left;
+	font-weight: 600;
+	font-family: 方正工业黑-标准;
+}
+.tanchuang.data-v-31bc7915{
+	position: fixed;
+	top: 300rpx;
+	width: 74%;
+	left: 10%;
+	background-color: #fff;
+	color: #000000;
+	border-radius: 40rpx;
+	padding: 40rpx 3%;
+	z-index: 2;
+}
+

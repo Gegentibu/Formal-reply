@@ -18,8 +18,7 @@
 .content{
 	height: 1500rpx;
 	line-height: 20px;
-	-webkit-border-radius: 45px 45px 0px 0px;
-	        border-radius: 45px 45px 0px 0px;
+	border-radius: 45px 45px 0px 0px;
 	text-align: center;
 	background-color: rgb(45,46,41);
 }
@@ -44,14 +43,12 @@
 	        align-items: center;
 }
 .img{
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 }
 .img image{
 	width:121rpx;
 	height: 121rpx;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 }
 .text {
 	margin-left: 10rpx;
@@ -60,7 +57,6 @@
 	width: 44rpx;
 	height: 44rpx;
 	background-color:#F36D11;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 }
 

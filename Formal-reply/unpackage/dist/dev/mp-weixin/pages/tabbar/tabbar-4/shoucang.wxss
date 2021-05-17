@@ -31,8 +31,7 @@
 	margin: 40rpx 0;
 }
 .pImg image.data-v-195466e4{
-		-webkit-border-radius: 50%;
-		        border-radius: 50%;
+		border-radius: 50%;
 		width:121rpx;
 		height: 121rpx;
 }
@@ -44,7 +43,6 @@
 .fuwuImg image.data-v-195466e4{
 	width:121rpx;
 	height: 121rpx;
-	-webkit-border-radius: 10rpx;
-	        border-radius: 10rpx;
+	border-radius: 10rpx;
 }
 

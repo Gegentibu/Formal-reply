@@ -1,0 +1,73 @@
+
+.Hybody.data-v-515f7977{
+	padding: 0 32rpx;
+	padding-top: 50rpx;
+	height: 2000rpx;
+	font-size: 14px;
+	background-color: #080808;
+	color: #fff;
+	text-align: left;
+}
+.titleText.data-v-515f7977{
+	color: rgba(255, 255, 255, 100);
+	font-size: 22px;
+	text-align: left;
+	font-weight: 600;
+	font-family: 方正工业黑-标准;
+	margin: 40rpx 0;
+}
+.HyFlexB.data-v-515f7977{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.HyFlexAr.data-v-515f7977{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.HyFlexS.data-v-515f7977{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: start;
+	-webkit-justify-content: start;
+	        justify-content: start;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.box.data-v-515f7977{
+	background-color: #2C2D28;
+	border-radius: 40rpx;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 40rpx;
+}
+.textCenter.data-v-515f7977{
+	text-align: center;
+	margin: 30rpx 0 10rpx 0;
+}
+.Hykp.data-v-515f7977{
+	padding: 10rpx;
+	border-radius: 40rpx;
+	background-color: #2C2D28;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.wdt100.data-v-515f7977{
+	width: 94%;
+	padding: 3%;
+}
+

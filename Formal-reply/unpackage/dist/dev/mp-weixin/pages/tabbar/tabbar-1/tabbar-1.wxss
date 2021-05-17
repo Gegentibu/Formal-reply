@@ -24,8 +24,7 @@
 		font-weight: 600; */
 }
 .active{
-		-webkit-box-sizing: border-box;
-		        box-sizing: border-box;
+		box-sizing: border-box;
 		/* color: #007AFF; */
 /* 		border-bottom: 5rpx solid #00aaff;
 		background-color: #f3ffff;
@@ -51,8 +50,7 @@ swiper-item{
 		height: 99%;
 		/* background-color: white; */
 		/* height: 99%; */
-		-webkit-box-sizing: border-box;
-		        box-sizing: border-box;
+		box-sizing: border-box;
 		padding: 1rpx;
 }
 .Hybody {
@@ -68,8 +66,7 @@ swiper-item{
 .headerImg image{
 	width: 90rpx;
 	height: 90rpx;
-	-webkit-border-radius: 70rpx;
-	        border-radius: 70rpx;
+	border-radius: 70rpx;
 }
 .PositionImg text{
 	color: #fff;
@@ -129,8 +126,7 @@ swiper-item{
 .NavImage{
 	width: 208rpx;
 	height: 278rpx;
-	-webkit-border-radius: 16px;
-	        border-radius: 16px;
+	border-radius: 16px;
 	background-color: #23273D;
 	display: -webkit-box;
 	display: -webkit-flex;

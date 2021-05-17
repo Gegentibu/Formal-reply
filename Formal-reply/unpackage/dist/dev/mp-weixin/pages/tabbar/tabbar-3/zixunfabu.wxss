@@ -14,10 +14,8 @@
 	position: relative;
 	z-index: 1;
 	top: -200rpx;
-	-webkit-border-top-left-radius: 50rpx;
-	        border-top-left-radius: 50rpx;
-	-webkit-border-top-right-radius: 50rpx;
-	        border-top-right-radius: 50rpx;
+	border-top-left-radius: 50rpx;
+	border-top-right-radius: 50rpx;
 	min-height: 500rpx;
 	background-color: #080808;
 	padding:70rpx 88rpx 0 88rpx;
@@ -49,11 +47,9 @@
 	width: 400rpx;
 }
 .fabuIpt input{
-	    -webkit-border-radius: 5px;
-	            border-radius: 5px;
+	    border-radius: 5px;
 	    padding: 3px 0px;
-	    -webkit-box-sizing: border-box;
-	            box-sizing: border-box;
+	    box-sizing: border-box;
 	    cursor: pointer;
 }
 .uni-column{
@@ -61,11 +57,9 @@
 	color: #000000;
 	/* text-align: right; */
 	border: 1px solid #E5E5E5;
-	    -webkit-border-radius: 5px;
-	            border-radius: 5px;
+	    border-radius: 5px;
 	    padding: 3px 10px;
-	    -webkit-box-sizing: border-box;
-	            box-sizing: border-box;
+	    box-sizing: border-box;
 	    cursor: pointer;
 }
 .fabuDitu image{

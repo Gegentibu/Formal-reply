@@ -56,14 +56,12 @@
 	margin-top: 10rpx;
 }
 .img{
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 }
 .img image{
 	width:121rpx;
 	height: 121rpx;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 }
 .text {
 	width: 100%;
@@ -75,8 +73,7 @@
 	width: 44rpx;
 	height: 44rpx;
 	background-color:#F36D11;
-	-webkit-border-radius: 50%;
-	        border-radius: 50%;
+	border-radius: 50%;
 	    margin-left: 20rpx;
 }
 

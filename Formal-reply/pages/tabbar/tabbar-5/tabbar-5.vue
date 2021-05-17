@@ -15,13 +15,13 @@
 						个人ID：997K4T
 					</view>
 					<view class="HyFlexB" style="padding:50upx 60upx 0 60upx;font-weight: 600;">
-						<view class="HyFlexL">
+						<view class="HyFlexL" @click="goToUrl('黑钻会员')">
 								<image src="../../../static/img/tabbar/homeactive.png" mode=""></image>
 							<view class="">
 								黑钻会员
 							</view>	
 						</view>	
-						<view class="HyFlexR">
+						<view class="HyFlexR"  @click="goToUrl('我的主页')">
 								<image src="../../../static/img/tabbar/homeactive.png" mode=""></image>
 							<view class="">
 								我的主页
@@ -35,14 +35,14 @@
 					</view>
 				</view>
 				<view class="HyFlexB" style="padding:50upx 80upx 0 80upx;font-weight: 600;">
-					<view class="HyFlexL">
+					<view class="HyFlexL"  @click="goToUrl('推广海报')">
 						<view class="">
 						</view>	
 						<view class="">
 							推广海报
 						</view>	
 					</view>	
-					<view class="HyFlexR">
+					<view class="HyFlexR"  @click="goToUrl('我要赚钱')">
 						<view class="">
 						</view>	
 						<view class="">
@@ -63,51 +63,51 @@
 					<view class="menuTitleL">
 						开通会员29.99起，低至0.13元/天
 					</view>
-					<view class="menuTitleR">
+					<view class="menuTitleR"  @click="goToUrl('立即开通')">
 						立即开通
 					</view>
 				</view>
 				<view class="menuContent">
-					<view class="menuList HyFlexM">
+					<view class="menuList HyFlexM"  @click="goToUrl('我的收藏')">
 						<text>2</text>
 						<image src="../../../static/img/video.png" mode=""></image>
 						<view class="menuListText">
 							我的收藏
 						</view>
 					</view>
-					<view class="menuList HyFlexM">
+					<view class="menuList HyFlexM"  @click="goToUrl('我的关注')">
 						<text>2</text>
 						<image src="../../../static/img/video.png" mode=""></image>
 						<view class="menuListText">
-							我的收藏
+							我的关注
 						</view>
 					</view>
-					<view class="menuList HyFlexM">
+					<view class="menuList HyFlexM"  @click="goToUrl('我的订单')">
 						<text>2</text>
 						<image src="../../../static/img/video.png" mode=""></image>
 						<view class="menuListText">
-							我的收藏
+							我的订单
 						</view>
 					</view>
-					<view class="menuList HyFlexM">
+					<view class="menuList HyFlexM"  @click="goToUrl('主页设置')">
 						<text>2</text>
 						<image src="../../../static/img/video.png" mode=""></image>
 						<view class="menuListText">
-							我的收藏
+							主页设置
 						</view>
 					</view>
-					<view class="menuList HyFlexM">
+					<view class="menuList HyFlexM"  @click="goToUrl('认证管理')">
 						<text>2</text>
 						<image src="../../../static/img/video.png" mode=""></image>
 						<view class="menuListText">
-							我的收藏
+							认证管理
 						</view>
 					</view>
-					<view class="menuList HyFlexM">
+					<view class="menuList HyFlexM" @click="goToUrl('我的审核')">
 						<text>2</text>
 						<image src="../../../static/img/video.png" mode=""></image>
 						<view class="menuListText">
-							我的收藏
+							我的审核
 						</view>
 					</view>
 				</view>
@@ -135,7 +135,7 @@
 									￥0.00
 								</view>
 							</view>
-							<view class="tixianR">
+							<view class="tixianR"  @click="goToUrl('提现')">
 								提现
 							</view>
 						</view>
@@ -170,7 +170,7 @@
 									推广最高每一笔奖励<text style="color: #4CD964;">275</text>元
 								</view>
 							</view>
-							<view class="Hybtn">
+							<view class="Hybtn"  @click="goToUrl('会员中心')">
 								会员中心
 							</view>
 						</view>
@@ -192,8 +192,8 @@
 							<view class="" style="font-size: 20px;font-weight: 400;">
 								答复黑卡                
 							</view>
-							<view class="Hybtn">
-								会员中心
+							<view class="Hybtn"  @click="goToUrl('开通黑卡')">
+								开通黑卡
 							</view>
 						</view>
 						<view class="HyFlexB wdt100">
@@ -268,7 +268,79 @@
 
 		},
 		methods: {
-
+			goToUrl(e){
+				if(e=='黑钻会员'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-9/tabbar-9',
+					});
+				}
+				if(e=='立即开通'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-9/tabbar-9',
+					});
+				}
+				if(e=='我要赚钱'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-9/tabbar-9',
+					});
+				}
+				if(e=='会员中心'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-9/tabbar-9',
+					});
+				}
+				if(e=='我的主页'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-7/tabbar-7',
+					});
+				}
+				if(e=='推广海报'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-6/tuiguanghaibao',
+					});
+				}
+				if(e=='我的收藏'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-6/wodeshoucang',
+					});
+				}
+				if(e=='我的关注'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-6/wodeguanzhu',
+					});
+				}
+				if(e=='我的订单'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-6/wodedingdan',
+					});
+				}
+				if(e=='主页设置'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-6/zhuyeshezhi',
+					});
+				}
+				if(e=='认证管理'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-6/renzhengguanli',
+					});
+				}
+				if(e=='我的审核'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-6/shenhefankui',
+					});
+				}
+				if(e=='提现'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-8/tixian',
+					});
+				}
+				if(e=='开通黑卡'){
+					uni.navigateTo({
+						url: '/pages/tabbar/tabbar-10/tabbar-10',
+					});
+				}
+				
+			}
 		}
 	}
 </script>
